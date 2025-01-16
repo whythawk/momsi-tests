@@ -1,6 +1,6 @@
 name: Standard Affiliations
 description: Submit a new organisation and its standard affiliations.
-labels: ["affiliations"]
+labels: ["affiliations",]
 assignees:
   - turukawa
 body:
