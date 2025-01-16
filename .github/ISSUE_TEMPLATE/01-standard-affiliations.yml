@@ -1,18 +1,17 @@
 name: Standard Affiliations
-description: "Submit a new organisation and its standard affiliations."
-labels: ["affiliations"]
+description: Submit a new organisation and its standard affiliations.
+labels: [affiliations]
 assignees:
   - turukawa
 body:
   - type: markdown
     attributes:
-      value: |
-        Thanks for taking the time to contribute this new organisation!
+      value: Thanks for taking the time to contribute this new organisation!
   - type: input
     id: organisation-name
     attributes:
       label: Organization Name
-      description: "What is the organization's name?"
+      description: What is the organization's name?
       placeholder: e.g. Genomic Standards Consortium
     validations:
       required: true
@@ -20,15 +19,13 @@ body:
     id: acronym
     attributes:
       label: Acronym
-      description: "What is the organization's acronym?"
+      description: What is the organization's acronym?
       placeholder: e.g. GSC
-    validations:
-      required: false
   - type: dropdown
     id: organisation-type
     attributes:
       label: Types
-      description: "What type of organisation is it?"
+      description: What type of organisation is it?
       options:
         - Initiative
         - None-Profit Organization
@@ -49,7 +46,7 @@ body:
     id: omics-domains
     attributes:
       label: Omics Domain(s)
-      description: "What is the organisation's omics domain?"
+      description: What is the organisation's omics domain?
       options:
         - Genomics
         - Proteomics
@@ -62,7 +59,7 @@ body:
     id: applications
     attributes:
       label: Application(s)
-      description: "What is the application?"
+      description: What is the application?
       options:
         - Mass Spectrometry
         - Spectroscopy
@@ -76,7 +73,7 @@ body:
     id: country
     attributes:
       label: Country
-      description: "What region or country is the organisation active in?"
+      description: What region or country is the organisation active in?
       placeholder: e.g. Worldwide
     validations:
       required: true
@@ -84,15 +81,7 @@ body:
     id: homepage
     attributes:
       label: Homepage
-      description: "What is the organization's homepage URL?"
-      placeholder: e.g. https://www.gensc.org
-    validations:
-      required: true
-  - type: input
-    id: homepage
-    attributes:
-      label: Homepage
-      description: "What is the organization's homepage URL?"
+      description: What is the organization's homepage URL?
       placeholder: e.g. https://www.gensc.org
     validations:
       required: true
@@ -100,22 +89,18 @@ body:
     id: comments
     attributes:
       label: Comments
-      description: "Describe the organisation and provide comment on its standard affiliations"
+      description: Describe the organisation and provide comment on its standard affiliations
     validations:
       required: true
   - type: input
     id: fairsharing-organisation
     attributes:
       label: FAIRsharing Organisation
-      description: "What is the organization's FAIRsharing URL?"
+      description: What is the organization's FAIRsharing URL?
       placeholder: e.g. https://fairsharing.org/organisations/4123
-    validations:
-      required: false
   - type: input
     id: references
     attributes:
       label: References
-      description: "Provide a URL for relevant references?"
+      description: Provide a URL for relevant references?
       placeholder: e.g. https://doi.org/10.12688/f1000research.12342.2
-    validations:
-      required: false
