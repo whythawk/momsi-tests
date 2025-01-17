@@ -1,5 +1,6 @@
 name: Genomics Standards
 description: Submit a new genomics standard for review.
+title: "[Genomics-Standard]: "
 labels: ["genomics", "review"]
 assignees:
   - turukawa
