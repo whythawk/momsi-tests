@@ -223,7 +223,7 @@ body:
     attributes:
       label: Related Standards
       description: What standards are related to this standard?
-      placeholder: e.g. model/format: GFF3
+      placeholder: "e.g. model/format: GFF3"
   - type: textarea
     id: comments
     attributes:
