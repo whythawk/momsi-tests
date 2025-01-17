@@ -53,7 +53,7 @@ body:
         - TRUST Principles
         - General Best Practices
         - Multi-omics Applicable
-		- Other
+        - Other
     validations:
       required: true
   - type: input
