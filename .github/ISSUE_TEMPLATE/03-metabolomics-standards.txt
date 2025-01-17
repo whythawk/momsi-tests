@@ -1,13 +1,13 @@
-name: Genomics Standards
-description: Submit a new genomics standard for review.
-labels: ["genomics", "review"]
+name: Metabolomics Standards
+description: Submit a new metabolomics standard for review.
+labels: ["metabolomics", "review"]
 assignees:
   - turukawa
   - lnanderson
 body:
   - type: markdown
     attributes:
-      value: Thanks for taking the time to contribute this new genomics standard!
+      value: Thanks for taking the time to contribute this new metabolomics standard!
   - type: dropdown
     id: standard-type
     attributes:
@@ -48,11 +48,9 @@ body:
       label: Domain Class/Subclass
       description: What is the domain class or -subclass of the standard?
       options:
-        - Genomics
-        - Transcriptomics
-        - Epigenomics
-        - Genomics/Transcriptomics
-        - Genomics/Transcriptomics/Epigenomics
+        - Metabolomics
+        - Lipidomics
+        - Metabolomics/Lipidomics
         - Multi-omics Applicable
     validations:
       required: true
@@ -61,7 +59,7 @@ body:
     attributes:
       label: Standard Name
       description: What is the name of the standard?
-      placeholder: e.g. FAIR Header Reference Genome
+      placeholder: e.g. NIST MS Search binary format and ASCII text format
     validations:
       required: true
   - type: input
@@ -69,7 +67,7 @@ body:
     attributes:
       label: Acronym
       description: What is the standard's acronym?
-      placeholder: e.g. FHR
+      placeholder: e.g. MSP
   - type: dropdown
     id: plan
     attributes:
@@ -177,7 +175,7 @@ body:
     attributes:
       label: Active Affiliation(s)
       description: What organisation is the standard affiliated to?
-      placeholder: e.g. Genome Standards Consortium (GSC)
+      placeholder: e.g. RSC Ontologies
     validations:
       required: true
   - type: input
@@ -185,7 +183,7 @@ body:
     attributes:
       label: Homepage
       description: What is the organization's homepage URL?
-      placeholder: e.g. https://www.gensc.org
+      placeholder: e.g. https://iupac.org/
     validations:
       required: true
   - type: input
@@ -217,7 +215,7 @@ body:
     attributes:
       label: Related Database
       description: What databases are related to this standard?
-      placeholder: e.g. microPublications, NCBI GenBank
+      placeholder: e.g. LIPID MAPS
   - type: input
     id: related-standards
     attributes:

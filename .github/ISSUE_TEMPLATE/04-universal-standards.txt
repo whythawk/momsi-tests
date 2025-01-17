@@ -1,13 +1,13 @@
-name: Genomics Standards
-description: Submit a new genomics standard for review.
-labels: ["genomics", "review"]
+name: Universal Standards
+description: Submit a new universal standard for review.
+labels: ["universal", "review"]
 assignees:
   - turukawa
   - lnanderson
 body:
   - type: markdown
     attributes:
-      value: Thanks for taking the time to contribute this new genomics standard!
+      value: Thanks for taking the time to contribute this new universal standard!
   - type: dropdown
     id: standard-type
     attributes:
@@ -48,12 +48,12 @@ body:
       label: Domain Class/Subclass
       description: What is the domain class or -subclass of the standard?
       options:
-        - Genomics
-        - Transcriptomics
-        - Epigenomics
-        - Genomics/Transcriptomics
-        - Genomics/Transcriptomics/Epigenomics
+        - FAIR Principles
+        - CARE Principles
+        - TRUST Principles
+        - General Best Practices
         - Multi-omics Applicable
+		- Other
     validations:
       required: true
   - type: input
@@ -61,7 +61,7 @@ body:
     attributes:
       label: Standard Name
       description: What is the name of the standard?
-      placeholder: e.g. FAIR Header Reference Genome
+      placeholder: e.g. Digital Object Identifier
     validations:
       required: true
   - type: input
@@ -69,7 +69,7 @@ body:
     attributes:
       label: Acronym
       description: What is the standard's acronym?
-      placeholder: e.g. FHR
+      placeholder: e.g. DOI
   - type: dropdown
     id: plan
     attributes:
@@ -177,7 +177,7 @@ body:
     attributes:
       label: Active Affiliation(s)
       description: What organisation is the standard affiliated to?
-      placeholder: e.g. Genome Standards Consortium (GSC)
+      placeholder: e.g. DOI Foundation
     validations:
       required: true
   - type: input
@@ -185,7 +185,7 @@ body:
     attributes:
       label: Homepage
       description: What is the organization's homepage URL?
-      placeholder: e.g. https://www.gensc.org
+      placeholder: e.g. https://www.doi.org/
     validations:
       required: true
   - type: input
@@ -205,13 +205,13 @@ body:
     attributes:
       label: FAIRsharing Record (DOI or URL)
       description: Provide a URL or DOI for relevant references?
-      placeholder: e.g. https://fairsharing.org/5383
+      placeholder: e.g. https://doi.org/10.25504/FAIRsharing.hFLKCn
   - type: input
     id: help-documentation
     attributes:
       label: Help Documentation
       description: Provide a URL for help documentation?
-      placeholder: e.g. https://www.earthbiogenome.org/analysis-standards-report
+      placeholder: e.g. https://www.doi.org/the-identifier/resources/
   - type: input
     id: related-database
     attributes:
