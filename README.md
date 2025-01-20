@@ -11,3 +11,4 @@ A real-world example can be found in the [awesome-browser-extensions-for-github]
 Now give it a try, and [order some :pizza:](https://github.com/whythawk/momsi-tests/issues/new?assignees=&labels=order&template=order-pizza.yml&title=Order+Pizza)
 
 # Orders
+1. [@turukawa](https://github.com/turukawa) orders 2 Large Regina Pizza pizza with Tomato
