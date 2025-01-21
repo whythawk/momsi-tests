@@ -9,9 +9,10 @@ jobs:
         runs-on: ubuntu-latest
         outputs:
             authorised-actor: ${{ steps.authorised-actor-check.outputs.valid && github.event.label.name == 'merge' }}
-            has-pizza: ${{ contains(github.event.issue.labels, 'pizza') }}
-            has-burger: ${{ contains(github.event.issue.labels, 'burger') }}
+            has-pizza: ${{ steps.pizza-check.outputs.pizza }}
+            has-burger: ${{ steps.pizza-check.outputs.burger }}
         steps:
+            - uses: snnaplab/get-labels-action@v1
             - name: Check if actor is authorised
               id: authorised-actor-check
               shell: bash
@@ -21,8 +22,24 @@ jobs:
                   else
                     echo "valid=false" >> $GITHUB_OUTPUT;
                   fi
-            - run: echo '${{ fromJSON(github.event.issue.labels) }}'
-            - run: echo burger '${{ contains(github.event.issue.labels, 'burger') }}'
+            - name: Check if label includes pizza
+              id: pizza-check
+              shell: bash
+              run: |
+                  if [ "${{ contains(fromJSON(env.LABELS), 'pizza') }}" ]; then
+                    echo "pizza=true" >> $GITHUB_OUTPUT;
+                  else
+                    echo "pizza=false" >> $GITHUB_OUTPUT;
+                  fi
+            - name: Check if label includes burger
+              id: burger-check
+              shell: bash
+              run: |
+                  if [ "${{ contains(fromJSON(env.LABELS), 'burger') }}" ]; then
+                    echo "burger=true" >> $GITHUB_OUTPUT;
+                  else
+                    echo "burger=false" >> $GITHUB_OUTPUT;
+                  fi
     pizzarisation:
         runs-on: ubuntu-latest
         needs: [validation]
