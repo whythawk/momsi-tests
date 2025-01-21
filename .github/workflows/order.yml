@@ -21,10 +21,10 @@ jobs:
         with:
           template-path: .github/ISSUE_TEMPLATE/order-pizza.yml
 
-      - run: ECHO '${{ secrets.AUTHORISED_MERGE }}'
-      - run: ECHO '${{ github.triggering_actor }}'
-      - run: ECHO '${{ github.event.label.name }}'
-      - run: ECHO '${{ env.AUTHORISED_ACTOR }}'
+      - run: echo '${{ secrets.AUTHORISED_MERGE }}'
+      - run: echo '${{ github.triggering_actor }}'
+      - run: echo '${{ github.event.label.name }}'
+      - run: echo '${{ env.AUTHORISED_ACTOR }}'
       
 
       - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
