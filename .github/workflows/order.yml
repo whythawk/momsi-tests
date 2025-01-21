@@ -1,44 +1,50 @@
 name: Process order
 on:
-  issues:
-    types: [labeled]
+    issues:
+        types: [labeled]
 concurrency: 'main'
-vars:
-    AUTHORISED_ACTOR: ${{ contains(fromJSON(secrets.AUTHORISED_MERGE), github.triggering_actor) && github.event.label.name == 'merge' }}
+
 jobs:
-  setup:
-    if: ${{ contains(fromJSON(secrets.AUTHORISED_MERGE), github.triggering_actor) && github.event.label.name == 'merge' }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+    validation:
+        runs-on: ubuntu-latest
+        outputs:
+            authorised-actor: ${{ steps.authorised-actor-check.outputs.valid && github.event.label.name == 'merge' }}
+        steps:
+            - name: Check if actor is authorised
+              id: authorised-actor-check
+              shell: bash
+              run: |
+                  if [ "${{ contains(fromJSON(secrets.AUTHORISED_MERGE), github.triggering_actor) }}" ]; then
+                    echo "valid=true" >> $GITHUB_OUTPUT;
+                  else
+                    echo "valid=false" >> $GITHUB_OUTPUT;
+                  fi
+    pizzarisation:
+        runs-on: ubuntu-latest
+        needs: [validation]
+        if: fromJSON(needs.validation.outputs.authorised-actor)
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2
+              with:
+                node-version: '16'
+            - uses: stefanbuck/github-issue-parser@v3
+              id: issue-parser
+              with:
+                template-path: .github/ISSUE_TEMPLATE/order-pizza.yml
 
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '16'
+            - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
+            - run: cat order.json
+            - run: node ./place-order.js
 
-      - uses: stefanbuck/github-issue-parser@v3
-        id: issue-parser
-        with:
-          template-path: .github/ISSUE_TEMPLATE/order-pizza.yml
+            - name: Commit changes
+              shell: bash
+              run: |
+                  git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
+                  git config --global user.name "github-actions[bot]" && \
+                  git add README.md && \
+                  git commit -m 'Place order' && \
+                  git push
 
-      - run: echo '${{ github.triggering_actor }}'
-      - run: echo '${{ github.event.label.name }}'
-      
-
-      - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
-
-      - run: cat order.json
-
-      - run: node ./place-order.js
-
-      - name: Commit changes
-        shell: bash
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
-          git config --global user.name "github-actions[bot]" && \
-          git add README.md && \
-          git commit -m 'Place order' && \
-          git push
-
-      - name: Close Issue
-        run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.number }}
+            - name: Close Issue
+              run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.number }}
