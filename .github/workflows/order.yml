@@ -3,10 +3,10 @@ on:
   issues:
     types: [labeled]
 concurrency: 'main'
-env:
-    AUTHORISED_ACTOR: ${{ contains(fromJSON(secrets.AUTHORISED_MERGE), github.triggering_actor) && github.event.label.name == 'merge' }}
 jobs:
   setup:
+    env:
+        AUTHORISED_ACTOR: ${{ contains(fromJSON(secrets.AUTHORISED_MERGE), github.triggering_actor) && github.event.label.name == 'merge' }}
     if: fromJSON('${{ env.AUTHORISED_ACTOR }}')
     runs-on: ubuntu-latest
     steps:
@@ -41,4 +41,4 @@ jobs:
           git push
 
       - name: Close Issue
-        run: gh issue close ${{ github.event.issue.number }}
+        run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.number }}
