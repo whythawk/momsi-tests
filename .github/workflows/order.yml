@@ -9,8 +9,8 @@ jobs:
         runs-on: ubuntu-latest
         outputs:
             authorised-actor: ${{ steps.authorised-actor-check.outputs.valid && github.event.label.name == 'merge' }}
-            has-pizza: ${{ contains(github.event.issue.labels|map(.name), 'pizza') }}
-            has-burger: ${{ contains(github.event.issue.labels|map(.name), 'burger') }}
+            has-pizza: ${{ contains(github.event.issue.labels.*.name, 'pizza') }}
+            has-burger: ${{ contains(github.event.issue.labels.*.name, 'burger') }}
         steps:
             - name: Check if actor is authorised
               id: authorised-actor-check
@@ -21,7 +21,7 @@ jobs:
                   else
                     echo "valid=false" >> $GITHUB_OUTPUT;
                   fi
-            - run: echo '${{ contains(github.event.issue.labels|map(.name) }}'
+            - run: echo '${{ github.event.issue.labels.*.name }}'
     pizzarisation:
         runs-on: ubuntu-latest
         needs: [validation]
