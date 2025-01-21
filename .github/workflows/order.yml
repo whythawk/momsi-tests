@@ -21,6 +21,8 @@ jobs:
                   else
                     echo "valid=false" >> $GITHUB_OUTPUT;
                   fi
+            - run: echo '${{ github.event.issue.labels }}'
+            - run: echo burger '${{ contains(github.event.issue.labels, 'burger') }}'
     pizzarisation:
         runs-on: ubuntu-latest
         needs: [validation]
