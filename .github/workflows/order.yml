@@ -9,6 +9,8 @@ jobs:
         runs-on: ubuntu-latest
         outputs:
             authorised-actor: ${{ steps.authorised-actor-check.outputs.valid && github.event.label.name == 'merge' }}
+            has-pizza: ${{ contains(github.event.issue.labels, "pizza") }}
+            has-burger: ${{ contains(github.event.issue.labels, "burger") }}
         steps:
             - name: Check if actor is authorised
               id: authorised-actor-check
@@ -22,7 +24,7 @@ jobs:
     pizzarisation:
         runs-on: ubuntu-latest
         needs: [validation]
-        if: fromJSON(needs.validation.outputs.authorised-actor)
+        if: fromJSON(needs.validation.outputs.authorised-actor) && fromJSON(needs.validation.outputs.has-pizza)
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v2
@@ -35,7 +37,38 @@ jobs:
 
             - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
             - run: cat order.json
-            - run: node ./place-order.js
+            - run: node ./place-pizza-order.js
+
+            - name: Commit changes
+              shell: bash
+              run: |
+                  git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
+                  git config --global user.name "github-actions[bot]" && \
+                  git add README.md && \
+                  git commit -m 'Place order' && \
+                  git push
+
+            - name: Close Issue
+              run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.number }}
+              env:
+                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    burgerisation:
+        runs-on: ubuntu-latest
+        needs: [validation]
+        if: fromJSON(needs.validation.outputs.authorised-actor) && fromJSON(needs.validation.outputs.has-burger)
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v2
+              with:
+                node-version: '16'
+            - uses: stefanbuck/github-issue-parser@v3
+              id: issue-parser
+              with:
+                template-path: .github/ISSUE_TEMPLATE/order-burger.yml
+
+            - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
+            - run: cat order.json
+            - run: node ./place-burger-order.js
 
             - name: Commit changes
               shell: bash
