@@ -4,7 +4,7 @@ on:
     types: [labeled]
 concurrency: 'main'
 env:
-    AUTHORISED_ACTOR: ${{ contains(["turukawa",], github.triggering_actor) && github.event.label.name == 'merge' }}
+    AUTHORISED_ACTOR: ${{ contains(fromJSON(secrets.AUTHORISED_MERGE), github.triggering_actor) && github.event.label.name == 'merge' }}
 jobs:
   setup:
     if: AUTHORISED_ACTOR
