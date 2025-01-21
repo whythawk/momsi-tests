@@ -12,3 +12,4 @@ Now give it a try, and [order some :pizza:](https://github.com/whythawk/momsi-te
 
 # Orders
 1. [@turukawa](https://github.com/turukawa) orders 2 Large Regina Pizza pizza with Tomato
+1. [@turukawa](https://github.com/turukawa) orders 2 Small Boerewors pizza with Sweet Corn
