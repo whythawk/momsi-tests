@@ -7,7 +7,7 @@ vars:
     AUTHORISED_ACTOR: ${{ contains(fromJSON(secrets.AUTHORISED_MERGE), github.triggering_actor) && github.event.label.name == 'merge' }}
 jobs:
   setup:
-    if: fromJSON('${{ vars.AUTHORISED_ACTOR }}')
+    if: ${{ contains(fromJSON(secrets.AUTHORISED_MERGE), github.triggering_actor) && github.event.label.name == 'merge' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
