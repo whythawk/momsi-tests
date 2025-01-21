@@ -1,6 +1,6 @@
 name: Want some pizza?
 description: Codeless contribution made easy!
-labels: [pizza]
+labels: ["pizza", "review"]
 
 title: "Order Pizza"
 

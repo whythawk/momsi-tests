@@ -1,10 +1,13 @@
 name: Process order
 on:
   issues:
-    types: opened
+    types: [labeled]
 concurrency: 'main'
+env:
+    AUTHORISED_ACTOR: ${{ contains(['turukawa'], github.triggering_actor) && github.event.label.name == 'merge' }}
 jobs:
-  place_order:
+  setup:
+    if: AUTHORISED_ACTOR
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -33,6 +36,5 @@ jobs:
           git commit -m 'Place order' && \
           git push
 
-      - uses: peter-evans/close-issue@v1
-        with:
-          comment: Pizza time! Check out the <a href="../">README</a>.
+      - name: Close Issue
+        run: gh issue close 
