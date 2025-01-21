@@ -7,7 +7,7 @@ env:
     AUTHORISED_ACTOR: ${{ contains(fromJSON(secrets.AUTHORISED_MERGE), github.triggering_actor) && github.event.label.name == 'merge' }}
 jobs:
   setup:
-    if: ${{ contains(fromJSON(secrets.AUTHORISED_MERGE), github.triggering_actor) && github.event.label.name == 'merge' }}
+    if: ${{ github.event.label.name == 'merge' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,6 +20,8 @@ jobs:
         id: issue-parser
         with:
           template-path: .github/ISSUE_TEMPLATE/order-pizza.yml
+
+      - run: ECHO '${{ secrets.AUTHORISED_MERGE, github.triggering_actor, github.event.label.name }}'
 
       - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
 
