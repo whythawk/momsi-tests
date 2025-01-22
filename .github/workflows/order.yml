@@ -55,7 +55,7 @@ jobs:
               with:
                 template-path: .github/ISSUE_TEMPLATE/order-burger.yml
                 
-            - run: echo ${{ steps.issue-parser.outputs.jsonString }} > order.json
+            - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
             - run: cat order.json
             - name: Upload order result
               uses: actions/upload-artifact@v4
