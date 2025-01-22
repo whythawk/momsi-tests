@@ -37,8 +37,6 @@ jobs:
               id: issue-parser
               with:
                 template-path: .github/ISSUE_TEMPLATE/order-pizza.yml
-
-
             - name: Set environment submission data
               id: set-data
               run: echo 'data=${{ steps.issue-parser.outputs.jsonString }}' >> "$GITHUB_OUTPUT"
@@ -58,7 +56,6 @@ jobs:
               id: issue-parser
               with:
                 template-path: .github/ISSUE_TEMPLATE/order-burger.yml
- 
             - name: Set environment submission data
               id: set-data
               run: echo 'data=${{ steps.issue-parser.outputs.jsonString }}' >> "$GITHUB_OUTPUT"
@@ -78,7 +75,8 @@ jobs:
                 node-version: '16' 
 
             - name: Set variables
-              id: set-env
+              id: set-variables
+              shell: bash
               run: |
                 if [[ "${{ needs.pizzarisation.result }}" == "success" ]]; then
                   echo "DATA_STRING=${{ needs.pizzarisation.outputs.data_string }}" >> $GITHUB_ENV
