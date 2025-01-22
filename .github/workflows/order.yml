@@ -92,13 +92,12 @@ jobs:
               shell: bash
               run: |
                 if [[ "${{ needs.pizzarisation.result }}" == "success" ]]; then
-                  echo "DATA_SUBMITTER=burgers" >> "$GITHUB_ENV"
+                  echo "pizzas" > submitter.json
                 elif [[ "${{ needs.burgerisation.result }}" == "success" ]]; then
-                  echo "DATA_SUBMITTER=pizzas" >> "$GITHUB_ENV"
+                  echo "burgers" > submitter.json
                 fi
 
-            - run: echo $DATA_SUBMITTER > submitter.txt
-            - run: cat submitter.txt
+            - run: cat submitter.json
             - run: node ./place-order.js
             
             - name: Commit changes
