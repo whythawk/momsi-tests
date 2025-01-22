@@ -19,3 +19,4 @@ Now give it a try, and [order some :pizza:](https://github.com/whythawk/momsi-te
 1. [@turukawa](https://github.com/turukawa) orders 198 Large Double waffle with cheese burger with Pineapple
 1. [@turukawa](https://github.com/turukawa) orders 13 Small Peri-Peri Chicken burger with Macon
 1. [@turukawa](https://github.com/turukawa) orders 13 Small Peri-Peri Chicken burger with Macon
+1. [@turukawa](https://github.com/turukawa) orders 45 Large Extra giraffe with vinegar burger with Pineapple
