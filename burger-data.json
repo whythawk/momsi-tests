@@ -7,5 +7,14 @@
     "i_acknowledge_that_submitting_this_issue_does_not_claim_a_real_burger_order": [
       "Confirm"
     ]
+  },
+  {
+    "flavour": "Peri-Peri Chicken",
+    "size": "Small",
+    "toppings": "Macon",
+    "count": "13",
+    "i_acknowledge_that_submitting_this_issue_does_not_claim_a_real_burger_order": [
+      "Confirm"
+    ]
   }
 ]
