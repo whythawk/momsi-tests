@@ -1,7 +1,7 @@
 const fs = require('fs');
 const eventPayload = require(process.env.GITHUB_EVENT_PATH);
 const order = require('./order.json');
-const data = require('./data.json')
+const data = JSON.parse(fs.readFileSync('data.json', 'utf-8'))
 
 const user = eventPayload.sender.login;
 const [flavour, size, toppings, count] = Object.values(order);
