@@ -66,6 +66,9 @@ jobs:
         if: ${{ always() && contains(needs.*.result, 'success') }}
         steps:
             - uses: actions/checkout@v2
+            - run: echo '${{ contains(needs.*.result, 'success') }}' 
+            - run: echo '${{ needs.pizzarisation.result }}' 
+            - run: echo '${{ needs.burgerisation.result }}' 
 
             - name: Commit changes
               shell: bash
