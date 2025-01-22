@@ -37,9 +37,14 @@ jobs:
               id: issue-parser
               with:
                 template-path: .github/ISSUE_TEMPLATE/order-pizza.yml
-            - name: Set environment submission data
-              id: set-data
-              run: echo 'data=${{ steps.issue-parser.outputs.jsonString }}' >> "$GITHUB_OUTPUT"
+                
+            - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
+            - run: cat order.json
+            - name: Upload order result
+              uses: actions/upload-artifact@v4
+              with:
+                name: order_data
+                path: order.json
 
     burgerisation:
         runs-on: ubuntu-latest
@@ -92,12 +97,12 @@ jobs:
               shell: bash
               run: |
                 if [[ "${{ needs.pizzarisation.result }}" == "success" ]]; then
-                  echo "pizzas" > submitter.json
+                  echo "pizzas" > submitter.txt
                 elif [[ "${{ needs.burgerisation.result }}" == "success" ]]; then
-                  echo "burgers" > submitter.json
+                  echo "burgers" > submitter.txt
                 fi
 
-            - run: cat submitter.json
+            - run: cat submitter.txt
             - run: node ./place-order.js
             
             - name: Commit changes

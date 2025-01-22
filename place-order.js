@@ -1,7 +1,7 @@
 const fs = require('fs');
 const eventPayload = require(process.env.GITHUB_EVENT_PATH);
 const order = require('./order.json');
-const submitter = require('./submitter.json');
+const submitter = fs.readFileSync('submitter.txt', 'utf-8')
 const data = JSON.parse(fs.readFileSync('data.json', 'utf-8'))
 
 const user = eventPayload.sender.login;
