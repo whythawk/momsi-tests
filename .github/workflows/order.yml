@@ -25,12 +25,12 @@ jobs:
     pizzarisation:
         runs-on: ubuntu-latest
         needs: [validation]
-        outputs:
-            order-data: ${{ steps.authorised-actor-check.outputs.valid && github.event.label.name == 'merge' }}
+        outputs: 
+            data_string: ${{ steps.set-data.outputs.data }}
         if: fromJSON(needs.validation.outputs.authorised-actor) && fromJSON(needs.validation.outputs.has-pizza)
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
               with:
                 node-version: '16'
             - uses: stefanbuck/github-issue-parser@v3
@@ -38,27 +38,31 @@ jobs:
               with:
                 template-path: .github/ISSUE_TEMPLATE/order-pizza.yml
 
-            - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
-            - run: cat order.json
-            - run: node ./place-pizza-order.js
+
+            - name: Set environment submission data
+              id: set-data
+              run: echo 'data=${{ steps.issue-parser.outputs.jsonString }}' >> "$GITHUB_OUTPUT"
 
     burgerisation:
         runs-on: ubuntu-latest
         needs: [validation]
+        outputs: 
+            data_string: ${{ steps.set-data.outputs.data }}
         if: fromJSON(needs.validation.outputs.authorised-actor) && fromJSON(needs.validation.outputs.has-burger)
         steps:
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
               with:
                 node-version: '16'
             - uses: stefanbuck/github-issue-parser@v3
               id: issue-parser
               with:
                 template-path: .github/ISSUE_TEMPLATE/order-burger.yml
+ 
+            - name: Set environment submission data
+              id: set-data
+              run: echo 'data=${{ steps.issue-parser.outputs.jsonString }}' >> "$GITHUB_OUTPUT"
 
-            - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
-            - run: cat order.json
-            - run: node ./place-burger-order.js
 
     completion:
         runs-on: ubuntu-latest
@@ -68,11 +72,28 @@ jobs:
             && !cancelled() 
             && (success('pizzarisation') || success('burgerisation'))
         steps:
-            - uses: actions/checkout@v2
-            - run: echo '${{ contains(needs.*.result, 'success') }}' 
-            - run: echo '${{ needs.pizzarisation.result }}' 
-            - run: echo '${{ needs.burgerisation.result }}' 
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                node-version: '16' 
 
+            - name: Set variables
+              id: set-env
+              run: |
+                if [[ "${{ needs.pizzarisation.result }}" == "success" ]]; then
+                  echo "DATA_STRING=${{ needs.pizzarisation.outputs.data_string }}" >> $GITHUB_ENV
+                  echo "DATA_SUBMITTER=burgers" >> "$GITHUB_ENV"
+                elif [[ "${{ needs.burgerisation.result }}" == "success" ]]; then
+                  echo "DATA_STRING=${{ needs.burgerisation.outputs.data_string }}" >> $GITHUB_ENV
+                  echo "DATA_SUBMITTER=pizzas" >> "$GITHUB_ENV"
+                fi
+
+            - run: echo $DATA_STRING > order.json
+            - run: cat order.json
+            - run: echo $DATA_SUBMITTER > submitter.json
+            - run: cat submitter.json
+            - run: node ./place-order.js
+            
             - name: Commit changes
               shell: bash
               run: |
