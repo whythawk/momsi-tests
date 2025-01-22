@@ -42,16 +42,6 @@ jobs:
             - run: cat order.json
             - run: node ./place-pizza-order.js
 
-            - name: Commit changes
-              shell: bash
-              run: |
-                  git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
-                  git config --global user.name "github-actions[bot]" && \
-                  git add README.md && \
-                  git add pizza-data.json && \
-                  git commit -m 'Place order' && \
-                  git push
-
     burgerisation:
         runs-on: ubuntu-latest
         needs: [validation]
@@ -67,9 +57,15 @@ jobs:
                 template-path: .github/ISSUE_TEMPLATE/order-burger.yml
 
             - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
-            - run: echo '${{ contains(needs.*.result, 'success') }}'
             - run: cat order.json
             - run: node ./place-burger-order.js
+
+    completion:
+        runs-on: ubuntu-latest
+        needs: [pizzarisation, burgerisation]
+        if: ${{ always() && contains(needs.*.result, 'success') }}
+        steps:
+            - uses: actions/checkout@v2
 
             - name: Commit changes
               shell: bash
@@ -77,18 +73,9 @@ jobs:
                   git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
                   git config --global user.name "github-actions[bot]" && \
                   git add README.md && \
-                  git add burger-data.json && \
+                  git add data.json && \
                   git commit -m 'Place order' && \
                   git push
-
-    completion:
-        runs-on: ubuntu-latest
-        needs: [pizzarisation, burgerisation]
-        if: |
-            always()
-            && contains(needs.*.result, 'success')
-        steps:
-            - uses: actions/checkout@v2
 
             - name: Close Issue
               run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.number }}
