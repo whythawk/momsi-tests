@@ -58,7 +58,7 @@ jobs:
                 template-path: .github/ISSUE_TEMPLATE/order-burger.yml
             - name: Set environment submission data
               id: set-data
-              run: echo 'data="${{ steps.issue-parser.outputs.jsonString }}"' >> "$GITHUB_OUTPUT"
+              run: echo "data='${{ steps.issue-parser.outputs.jsonString }}'" >> "$GITHUB_OUTPUT"
 
     completion:
         runs-on: ubuntu-latest
