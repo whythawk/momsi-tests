@@ -45,7 +45,7 @@ jobs:
         needs: [validation]
         if: fromJSON(needs.validation.outputs.authorised-actor) && fromJSON(needs.validation.outputs.has-burger)
         steps:
-            - uses: actions/checkout@v2
+
             - uses: actions/setup-node@v2
               with:
                 node-version: '16'
@@ -55,7 +55,7 @@ jobs:
                 template-path: .github/ISSUE_TEMPLATE/order-burger.yml
 
             - run: echo '${{ steps.issue-parser.outputs.jsonString }}' > order.json
-            - run: echo '${{ needs.validation.result }}'
+            - run: echo '${{ contains(needs.*.result, 'success') }}'
             - run: cat order.json
             - run: node ./place-burger-order.js
 
