@@ -44,8 +44,6 @@ jobs:
     burgerisation:
         runs-on: ubuntu-latest
         needs: [validation]
-        outputs: 
-            data_string: ${{ steps.set-data.outputs.data }}
         if: fromJSON(needs.validation.outputs.authorised-actor) && fromJSON(needs.validation.outputs.has-burger)
         steps:
             - uses: actions/checkout@v4
@@ -56,9 +54,14 @@ jobs:
               id: issue-parser
               with:
                 template-path: .github/ISSUE_TEMPLATE/order-burger.yml
-            - name: Set environment submission data
-              id: set-data
-              run: echo "data='${{ steps.issue-parser.outputs.jsonString }}'" >> "$GITHUB_OUTPUT"
+                
+            - run: echo ${{ steps.issue-parser.outputs.jsonString }} > order.json
+            - run: cat order.json
+            - name: Upload order result
+                uses: actions/upload-artifact@v4
+                with:
+                    name: order_data
+                    path: order.json
 
     completion:
         runs-on: ubuntu-latest
@@ -73,22 +76,29 @@ jobs:
               with:
                 node-version: '16' 
 
+            - name: Download order result
+                uses: actions/download-artifact@v4
+                with:
+                    name: order_data
+            - name: Restore data
+              id: set-completion-data
+              shell: bash
+              run: |
+                data=`cat order.json`
+                echo $data > order.json
+
             - name: Set variables
               id: set-variables
               shell: bash
               run: |
                 if [[ "${{ needs.pizzarisation.result }}" == "success" ]]; then
-                  echo "DATA_STRING=${{ needs.pizzarisation.outputs.data_string }}" >> $GITHUB_ENV
                   echo "DATA_SUBMITTER=burgers" >> "$GITHUB_ENV"
                 elif [[ "${{ needs.burgerisation.result }}" == "success" ]]; then
-                  echo "DATA_STRING=${{ needs.burgerisation.outputs.data_string }}" >> $GITHUB_ENV
                   echo "DATA_SUBMITTER=pizzas" >> "$GITHUB_ENV"
                 fi
 
-            - run: echo $DATA_STRING > order.json
-            - run: cat order.json
-            - run: echo $DATA_SUBMITTER > submitter.json
-            - run: cat submitter.json
+            - run: echo $DATA_SUBMITTER > submitter.txt
+            - run: cat submitter.txt
             - run: node ./place-order.js
             
             - name: Commit changes
