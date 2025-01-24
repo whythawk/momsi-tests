@@ -26,3 +26,4 @@ Now give it a try, and [order some :pizza:](https://github.com/whythawk/momsi-te
 1. [@turukawa](https://github.com/turukawa) orders 45 Large Extra giraffe with vinegar burger with Pineapple
 1. [@turukawa](https://github.com/turukawa) orders 685 Regular Chicken and Mushroom burger with Sweet Corn
 1. [@turukawa](https://github.com/turukawa) orders 45 Large Extra giraffe with vinegar burger with Pineapple
+1. [@turukawa](https://github.com/turukawa) orders 345 Large Chicken Tikka burger with Mushroom
