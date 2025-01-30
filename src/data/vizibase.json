@@ -12,7 +12,7 @@
               "children": [
                 {
                   "name": "Sequence Ontology",
-                  "count": 2
+                  "count": 1
                 },
                 {
                   "name": "Genomics Cohorts Knowledge Ontology",
@@ -23,7 +23,7 @@
                   "count": 1
                 }
               ],
-              "count": 4
+              "count": 3
             },
             {
               "name": "Model/Format",
@@ -210,7 +210,7 @@
               "count": 1
             }
           ],
-          "count": 44
+          "count": 43
         },
         {
           "name": "Genomics, Transcriptomics",
@@ -531,7 +531,7 @@
           "count": 3
         }
       ],
-      "count": 92
+      "count": 91
     },
     {
       "name": "Proteomics",
@@ -1484,5 +1484,5 @@
       "count": 56
     }
   ],
-  "count": 244
+  "count": 243
 }
