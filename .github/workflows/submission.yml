@@ -132,6 +132,7 @@ jobs:
             - uses: actions/setup-node@v4
               with:
                 node-version: '20' 
+                cache: "yarn"
 
             - name: Download submission result
               uses: actions/download-artifact@v4
@@ -172,29 +173,6 @@ jobs:
                   git commit -m 'Update Standards' && \
                   git push
 
-            - name: Close Issue
-              run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.number }}
-              env:
-                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    build:
-        runs-on: ubuntu-latest
-        needs: [genomics, proteomics, metabolomics, universal, completion]
-        if: |
-            !failure() 
-            && !cancelled() 
-            && (success('genomics') || success('proteomics') || success('metabolomics') || success('universal'))
-            && success('completion')
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v4
-
-            - name: Setup node
-              uses: actions/setup-node@v4
-              with:
-                node-version: '20'
-                cache: "yarn"
-
             - name: Install dependencies
               run: yarn --frozen-lockfile
 
@@ -206,18 +184,22 @@ jobs:
               with:
                 path: ./dist
 
+            - name: Close Issue
+              run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.number }}
+              env:
+                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     deploy:
         runs-on: ubuntu-latest
-        needs: [genomics, proteomics, metabolomics, universal, completion, build]
         permissions:
             pages: write
             id-token: write
+        needs: [genomics, proteomics, metabolomics, universal, completion]
         if: |
             !failure() 
             && !cancelled() 
             && (success('genomics') || success('proteomics') || success('metabolomics') || success('universal'))
             && success('completion')
-            && success('build')
         environment:
           name: github-pages
           url: ${{ steps.deployment.outputs.page_url }}
