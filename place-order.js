@@ -1,9 +1,9 @@
-const fs = require('fs')
-const eventPayload = require(process.env.GITHUB_EVENT_PATH)
-const standard = String(fs.readFileSync('submitter.txt', 'utf-8')).trim()
-const title = String(fs.readFileSync('title.txt', 'utf-8')).trim()
-let submission = JSON.parse(fs.readFileSync('order.json', 'utf-8'))
-let data = JSON.parse(fs.readFileSync('./src/data/data.json', 'utf-8'))
+const fs = require('fs');
+const eventPayload = require(process.env.GITHUB_EVENT_PATH);
+const standard = String(fs.readFileSync('submitter.txt', 'utf-8')).trim();
+const title = String(fs.readFileSync('title.txt', 'utf-8')).trim();
+let submission = JSON.parse(fs.readFileSync('order.json', 'utf-8'));
+let data = JSON.parse(fs.readFileSync('./src/data/data.json', 'utf-8'));
 const leadingZeros = 5
 const terms = ["burgers", "pizzas"]
 const prefix = {
