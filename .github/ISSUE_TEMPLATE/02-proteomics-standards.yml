@@ -83,20 +83,6 @@ body:
         - Spark Source Mass Spectrometry (SSMS)
         - Tandem Mass Spectrometry
         - Secondary Ion Mass Spectrometry (SIMS)
-        - Mass Spectrometry (general)
-        - Gas Chromatography-Mass Spectrometry (GC-MS)
-        - Liquid Chromatography-Mass Spectrometry (LC-MS)
-        - Capillary Electrophoresis–Mass Spectrometry (CE-MS)
-        - Ion Mobility Mass Spectrometry (IM-MS)
-        - Thermal Ionization Mass Spectrometry (TIMS)
-        - Time-of-Flight Mass Spectrometer (TOF)
-        - Single Particle Mass Spectrometry (SPMS)
-        - Fourier-Transform Ion Cyclotron Resonance-Mass Spectrometry (FT-ICR-MS)
-        - Ion Mobility Spectrometry Time-of-Flight Mass Spectrometry (IMS-TOF MS)
-        - Matrix-Assisted Laser Desorption/Ionization (MALDI) Mass Spectrometry
-        - MALDI-TOF
-        - AP-MALDI
-        - MALDI-FT-ICR
         - Other
     validations:
       required: true
