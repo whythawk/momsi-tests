@@ -6,7 +6,7 @@ const eventPayload = require(process.env.GITHUB_EVENT_PATH)
 let submission = JSON.parse(fs.readFileSync('submission.json', 'utf-8'))
 let data = JSON.parse(fs.readFileSync('./src/data/database.json', 'utf-8'))
 const standard = String(fs.readFileSync('submitter.txt', 'utf-8')).trim().toLowerCase()
-const title = eventPayload.issue.title
+const title = eventPayload.issue.title.trim()
 const contributor = eventPayload.issue.user.login
 
 // CONSTANTS
@@ -77,19 +77,20 @@ function checkIdentifier(title = title, submission = submission, data = data, te
   // If the title refers to an existing Standard, then update that entirely
   // Else generate a new identifier and push that to the database
   submission["Contributor"] = contributor
-  if (submission.hasOwnProperty("comment")) delete submission.comment
+  if (submission.hasOwnProperty("comments")) delete submission.comments
+  console.log("TITLE:", title)
   if (title.startsWith(`[${INDICATORS[term]}:`)) {
 	  submission["Identifier"] = title.slice(1,14)
 	  // https://stackoverflow.com/a/39529049
-	  const indexOfTerm = data[standard].findIndex(item => item.Identifier === submission.Identifier)
+	  const indexOfTerm = data[term].findIndex(item => item.Identifier === submission.Identifier)
 	  if (indexOfTerm) {
-		  data[standard][indexOfTerm] = submission
+		  data[term][indexOfTerm] = submission
 		  return data
 	  }
   }
   // Default, create an identifier and append
-  submission["Identifier"] = getFormalIdentifier(data[standard].length + 1)
-  data[standard].push(submission)
+  submission["Identifier"] = getFormalIdentifier(data[term].length)
+  data[term].push(submission)
   return data
 }
 
