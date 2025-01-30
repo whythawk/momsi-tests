@@ -172,6 +172,11 @@ jobs:
                   git commit -m 'Update Standards' && \
                   git push
 
+            - name: Close Issue
+              run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.number }}
+              env:
+                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     build:
         runs-on: ubuntu-latest
         needs: [genomics, proteomics, metabolomics, universal, completion]
@@ -220,8 +225,3 @@ jobs:
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v4
-
-            - name: Close Issue
-              run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.number }}
-              env:
-                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

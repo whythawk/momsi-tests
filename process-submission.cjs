@@ -20,14 +20,37 @@ const INDICATORS = {
     "metabolomics": "MOMSI_M",
     "universal": "MOMSI_U",
 }
+const REPLACEMAP = { 
+	"standard-type": "Standard Type",
+	"status": "Status",
+	"country": "Country",
+	"domain-class-subclass": "Domain Class/Subclass",
+	"application-technology": "Application Technology",
+	"standard-name": "Standard Name",
+	"acronym": "Acronym",
+	"plan": "Plan",
+	"collect": "Collect",
+	"process": "Process",
+	"analysis": "Analysis",
+	"preservation": "Preservation",
+	"sharing": "Sharing",
+	"reuse": "Reuse",
+	"meets-criteria": "Meets Criteria",
+	"active-affiliations": "Active Affiliation(s)",
+	"homepage": "Homepage",
+	"reference-article-citation-doi": "Reference Article Citation (DOI)",
+	"reference-source-code-doi": "Reference Source Code (DOI or URL)",
+	"fairsharing-record-doi": "FAIRsharing Record (DOI or URL)",
+}
 const LEADINGZEROS = 5
 
 // UPDATE DATABASE
 
 function initialiseDataIndex(data) {
 	// Check that database is properly indexed, and index if it isn't
+	// Deprecated as not necessary here
 	for (const term of STANDARDS) {
-		if (data[term.toLowerCase()].length && !data[term.toLowerCase()][0].hasOwnProperty("identifier")) {
+		if (data[term.toLowerCase()].length && !data[term.toLowerCase()][0].hasOwnProperty("Identifier")) {
 			data[term.toLowerCase()] = data[term.toLowerCase()].map((item, index) => ({ ...item, identifier: `${getFormalIdentifier(index + 1, term)}`}))
 		}
 	}
@@ -47,24 +70,31 @@ function getFormalIdentifier(num, term = standard, length = LEADINGZEROS) {
 function checkIdentifier(title = title, submission = submission, data = data, term = standard, contributor = null) {
   // If the title refers to an existing Standard, then update that entirely
   // Else generate a new identifier and push that to the database
-  submission["contributor"] = contributor
+  submission["Contributor"] = contributor
   if (submission.hasOwnProperty("comment")) delete submission.comment
   if (title.startsWith(`[${INDICATORS[term]}:`)) {
-	  submission["identifier"] = title.slice(1,14)
+	  submission["Identifier"] = title.slice(1,14)
 	  // https://stackoverflow.com/a/39529049
-	  const indexOfTerm = data[standard].findIndex(item => item.identifier === submission.identifier)
+	  const indexOfTerm = data[standard].findIndex(item => item.Identifier === submission.Identifier)
 	  if (indexOfTerm) {
 		  data[standard][indexOfTerm] = submission
 		  return data
 	  }
   }
   // Default, create an identifier and append
-  submission["identifier"] = getFormalIdentifier(data[standard].length + 1)
+  submission["Identifier"] = getFormalIdentifier(data[standard].length + 1)
   data[standard].push(submission)
   return data
 }
 
+// Remap the keys from the GitHub template to those of the database
+// https://stackoverflow.com/a/27806458
+let replaceKeyInObjectArray = (a, r) => a.map(o => 
+    Object.keys(o).map((key) => ({ [r[key] || key] : o[key] })
+).reduce((a, b) => Object.assign({}, a, b)))
+replaceKeyInObjectArray(submission, REPLACEMAP)
 // data = initialiseDataIndex(data)
+
 data = checkIdentifier(title, submission, data, standard, contributor)
 fs.writeFileSync('./src/data/database.json', JSON.stringify(data, null, '  '));
 
@@ -144,7 +174,7 @@ function rebuildTypesAggregations(data, standards = STANDARDS, standardTypes = S
 }
 
 let aggregation = rebuildVisualisationAggregations(data, STANDARDS_AGGREGATION)
-fs.writeFileSync('./src/data/vizibase.json', JSON.stringify(data, null, '  '));
+fs.writeFileSync('./src/data/vizibase.json', JSON.stringify(aggregation, null, '  '));
 
 aggregation = rebuildTypesAggregations(data, STANDARDS, STANDARDTYPES)
-fs.writeFileSync('./src/data/typebase.json', JSON.stringify(data, null, '  '));
+fs.writeFileSync('./src/data/typebase.json', JSON.stringify(aggregation, null, '  '));
