@@ -101,8 +101,13 @@ jobs:
                 elif [[ "${{ needs.burgerisation.result }}" == "success" ]]; then
                   echo "burgers" > submitter.txt
                 fi
+                
+            - name: Set title
+              id: set-title
+              run: echo "${{ github.event.issue.title }}" > title.txt
 
             - run: cat submitter.txt
+            - run: cat title.txt
             - run: node ./place-order.js
             
             - name: Commit changes

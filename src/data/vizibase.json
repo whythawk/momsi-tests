@@ -1,0 +1,1488 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Browser Extensible Data Methylation file format"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Genomic Epidemiology Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Epigenome Ontology"
+                                }
+                            ],
+                            "count": 2,
+                            "name": "Terminology artefact"
+                        }
+                    ],
+                    "count": 3,
+                    "name": "Epigenomics"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "ENA Sequence XML Schema"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Binary Index Browser Extensible Data file format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Browser Extensible Data Wiggle file format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Browser Extensible Data Paired-End file format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Browser Extensible Data file format"
+                                }
+                            ],
+                            "count": 5,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Ontology of RNA Sequencing"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Terminology artefact"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "NCBI BioSample Identifier"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "NCBI BioProject Identifier"
+                                }
+                            ],
+                            "count": 2,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 8,
+                    "name": "Genomics, Transcriptomics, Epigenomics"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "GSCID/BRC Project and Sample Application Standard"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "GSCID/BRC Clinical Metadata Standard"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Quantitative Assembly standards "
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimal Information about a Genome Sequence: cultured bacteria/archaea"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimal Information about a Genome Sequence: eukaryote"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimal Information about a Genome Sequence: organelle"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimal Information about a Genome Sequence: plasmid"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimal Information about a Genome Sequence: virus"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimum information about a single amplified genome sequence"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimum Information about an Uncultivated Virus Genome"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Reporting guidelines for human microbiome research: STORMS Checklist"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "GA4GH Variation Representation Specification"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "General Genomic Reporting in FHIR"
+                                }
+                            ],
+                            "count": 13,
+                            "name": "Reporting Guideline"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "FAIR Header Reference Genome"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Generic Feature Format Version 3"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Variant Call Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Phenopackets: A format for phenotypic data exchange"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Sequence Alignment Map text-based format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Beacon framework and data model"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Binary Alignment Map extension format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "CLUSTAL-W Multiple Sequence Alignment text-based format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Pairs file format specification draft 1.0"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Multiple Sequence Alignment File Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "XML for evolutionary biology and comparative genomics"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "GenBank Schema"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "PLINK sample information file"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genomic Contextual Data Markup Language"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genomics informatics \u2014 Data elements and their metadata for describing the tumor mutation burden (TMB) information of clinical massive parallel DNA sequencing"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genomics informatics \u2014 Data elements and their metadata for describing the microsatellite instability (MSI) information of clinical massive parallel DNA sequencing"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genomics informatics \u2014 Requirements for interoperable systems for genomic surveillance"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genomics informatics \u2014 Description rules for genomic data for genetic detection products and services"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genomics Informatics \u2014 Data elements and their metadata for describing structured clinical genomic sequence information in electronic health records"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genomics informatics \u2014 Omics Markup Language (OML)"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genomics informatics \u2014 Reliability assessment criteria for high-throughput gene-expression data"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genomics informatics\u2014 Quality control metrics for DNA sequencing"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genomics informatics \u2014 Structured clinical gene fusion report in electronic health records"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genomics informatics \u2014 Clinical genomics data sharing specification for next-generation sequencing"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Health informatics \u2014 Genomic Sequence Variation Markup Language (GSVML)"
+                                }
+                            ],
+                            "count": 25,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Sequence Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genomics Cohorts Knowledge Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Antibiotic Resistance Ontology"
+                                }
+                            ],
+                            "count": 3,
+                            "name": "Terminology artefact"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "WGS Quality Control Standards"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Multi-Standard Applicable"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "JGI Genomes Online Database Identifier"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 43,
+                    "name": "Genomics"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "FASTQ Nucleotide Sequence Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Compressed Reference-oriented Alignment Map compressed columnar file format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Newick Tree"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Adaptive Immune Receptor Repertoire Standard"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Adaptive Immune Receptor Repertoire Rearrangement Standard"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "FAIR Genomes semantic metadata schema"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Short Read Archive eXtensible Markup Language"
+                                }
+                            ],
+                            "count": 7,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Minimum Information about any Sequence"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimum Information about a high-throughput SEQuencing Experiment"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimal Metagenome Sequence Analysis Standard"
+                                }
+                            ],
+                            "count": 3,
+                            "name": "Reporting Guideline"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "AIRR Data Commons Standard for data queries"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Multi-Standard Applicable"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Compact Ideosyncratic Gapped Alignment Report string format"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 12,
+                    "name": "Genomics, Transcriptomics"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "FASTA Sequence Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Gene Transfer Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Hierarchical Data Format HDF5 genomic file"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Biological Pathway Exchange"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "PLINK pedigree/phenotype information"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Systems Biology Markup Language"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "FAIRtracks metadata schema"
+                                }
+                            ],
+                            "count": 7,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Minimal Standard for Adaptive Immune Receptor Repertoires"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "NIH Common Data Elements"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimal Information About a Phylogenetic Analysis Checklist"
+                                }
+                            ],
+                            "count": 3,
+                            "name": "Reporting Guideline"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "HGNC Gene Symbols, Gene Names and IDs"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Sample registration checklists"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimal Information About a Phylogenetic Analysis Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Genotype Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Environment Ontology"
+                                }
+                            ],
+                            "count": 5,
+                            "name": "Terminology artefact"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "NCBI Taxonomy identifier schema"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 16,
+                    "name": "Multi-omics Applicable"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "miRNA pipeline file format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "MD5 Checksum File"
+                                }
+                            ],
+                            "count": 2,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Minimum Information About Microarray Experiment"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "MIAME-supportive format for microarray data"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimum information about a metagenome sequence"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimum information about a marker gene sequence"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimum information about a metagenome-assembled genome sequence"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "OECD Omics Reporting Framework for Transcriptomics in Regulatory Toxicology"
+                                }
+                            ],
+                            "count": 6,
+                            "name": "Reporting Guideline"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Provisional Cell Ontology"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Terminology artefact"
+                        }
+                    ],
+                    "count": 9,
+                    "name": "Transcriptomics"
+                }
+            ],
+            "count": 91,
+            "name": "Genomics"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "mzIdentML"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "PSI Extended Fasta Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "PSI Spectral Library Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Sample to Data Relationship Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Proteoform and Peptidoform Notation Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Peak Annotation Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Mascot Generic Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "FASTA Sequence Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Proprietary MS formats (vendor specific)"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Thermo Fisher Instrument output .RAW file format"
+                                }
+                            ],
+                            "count": 10,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "The minimum information about a proteomics experiment"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Guidelines for reporting the use of mass spectrometry in proteomics"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Guidelines for reporting quantitative mass spectrometry based experiments in proteomics"
+                                }
+                            ],
+                            "count": 3,
+                            "name": "Reporting Guideline"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Universal Spectrum Identifier"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "UniProt Identifiers"
+                                }
+                            ],
+                            "count": 2,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 15,
+                    "name": "Proteomics, Metaproteomics"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Reporting and exchange format for mass spectrometry quality control data"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Imaging Mass Spectrometry Markup Language"
+                                }
+                            ],
+                            "count": 2,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Guidelines for reporting the use of mass spectrometry informatics in proteomics"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "The Minimum Information About a Bioactive Entity"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "HPP Data Interpretation Guidelines version 3.0"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "HUPO Minimum Information Publication Guidelines v.1.0"
+                                }
+                            ],
+                            "count": 4,
+                            "name": "Reporting Guideline"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "HUPO PSI Mass Spectrometry Controlled Vocabulary"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "PSI-MOD Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Protein Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Molecular Interactions Controlled Vocabulary"
+                                }
+                            ],
+                            "count": 4,
+                            "name": "Terminology artefact"
+                        }
+                    ],
+                    "count": 10,
+                    "name": "Multi-omics Applicable"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "mzMLb"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Proteomics BAM file format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "proteomics Browser Extensible Data file"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Transition Markup Language"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "PRIDE XML Format"
+                                }
+                            ],
+                            "count": 5,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Minimum Information About Sample Preparation for a Phosphoproteomics Experiment"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "MIAPE: Gel Informatics"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Proposed mzML best practices for encoding IM-MS and Data Independent Acquisition (DIA) data in mzML"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimum information guidelines for experiments structurally characterizing intrinsically disordered protein regions"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimum information about a protein affinity reagent"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Guidelines for reporting the use of gel electrophoresis in proteomics"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "MIAPE Column Chromatography"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "MIAPE Capillary Electrophoresis"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "MassIVE Metadata, Quantification, and Statistical Analysis of Quantified Analytes Metadata requirements"
+                                }
+                            ],
+                            "count": 9,
+                            "name": "Reporting Guideline"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "mzML"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "mzTab"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "PRIDE Archive accepted file formats"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "PROteomics eXpression Interface"
+                                }
+                            ],
+                            "count": 4,
+                            "name": "Multi-Standard Applicable"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "PRIDE/ProteomeXchange Accession number"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 19,
+                    "name": "Proteomics"
+                }
+            ],
+            "count": 44,
+            "name": "Proteomics"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Analytical Data Interchange Protocol for Chromatographic Data"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Reporting Guideline"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "PDB Macromolecular Crystallographic Information File"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Chemical Information Ontology"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Terminology artefact"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "IUPAC International Chemical Identifier"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Simplified molecular-input line-entry system chemical file format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "International Chemical Identifier"
+                                }
+                            ],
+                            "count": 3,
+                            "name": "Multi-Standard Applicable"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "CAS Registry Number"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "PubChem Compound Identifier"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Chemical IUPAC Name"
+                                }
+                            ],
+                            "count": 3,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 9,
+                    "name": "Metabolomics, Lipidomics"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Minimal Feature Input Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Minimum information about a bioactive entity"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "InChI Isotopologue and Isotopomer Extension Specifications"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "OECD Omics Reporting Framework for Metabolomics in Regulatory Toxicology"
+                                }
+                            ],
+                            "count": 4,
+                            "name": "Reporting Guideline"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Structure Data Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Investigation Study Assay Tabular"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "NIST MS Search binary format and ASCII text format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Mascot Generic File Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Chemdraw CDX file"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "XML-based exchange and storage format for NMR spectral data"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Raw mass spectrometer data XML format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Chemical Connection Table (CT) open file format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Thermo raw spectrum file format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "ToF-SIMS depth profile file format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "ToF-SIMS raw data file format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Mass spectrometry raw data proprietary file format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "A specification for sharing nanomaterial research data in spreadsheet-based format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Thermochemical Markup Language"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Imaging Mass Spectrometry Markup Language"
+                                }
+                            ],
+                            "count": 15,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Ontology of Biomedical Investigations"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Chemical Methods Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "XLMOD Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "HUPO PSI Mass Spectrometry Controlled Vocabulary"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Chemical Analysis Metadata Platform"
+                                }
+                            ],
+                            "count": 5,
+                            "name": "Terminology artefact"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Chemical Entities of Biological Interest"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Multi-Standard Applicable"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Universal Spectrum Identifier"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 26,
+                    "name": "Multi-omics Applicable"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "mzTab for Metabolomics"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Molecular Interaction XML Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Finnigan ITDS file format, MassLab data format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Metabolomics Workbench Tabular File Format"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Molecular Interaction Tabular"
+                                }
+                            ],
+                            "count": 5,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Minimum Information about a Molecular Interaction Experiment"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "A data reporting standard for mass spectrometry imaging"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Core Information for Metabolomics Reporting"
+                                }
+                            ],
+                            "count": 3,
+                            "name": "Reporting Guideline"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Metabolomics Standards Initiative Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Nuclear Magnetic Resonance Markup Language"
+                                }
+                            ],
+                            "count": 2,
+                            "name": "Terminology artefact"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "HMDB identifier (Primary Accession Number)"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Reference list of Metabolite names"
+                                }
+                            ],
+                            "count": 2,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 12,
+                    "name": "Metabolomics"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Lipidomics Minimal Reporting Checklist"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "mzTab for Lipidomics"
+                                }
+                            ],
+                            "count": 2,
+                            "name": "Reporting Guideline"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Lipid Ontology"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Terminology artefact"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "LIPID MAPS classification identifiers"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Multi-Standard Applicable"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "SwissLipids Identifiers"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 5,
+                    "name": "Lipidomics"
+                }
+            ],
+            "count": 52,
+            "name": "Metabolomics"
+        },
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "The CARE Principles for Indigenous Data Governance"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Other (Community-Driven)"
+                        }
+                    ],
+                    "count": 1,
+                    "name": "CARE Principles"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "The FAIR Guiding Principles for scientific data management and stewardship"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Other (Community-Driven)"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Digital Object Identifier"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "handle identifier"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Persistent Identifiers"
+                                }
+                            ],
+                            "count": 3,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 4,
+                    "name": "FAIR Principles"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Requirements for data formatting and description in the life sciences"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "NIST Research Data Framework (RDaF) (Version 2.0)"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "FORCE11 Data Citation Principles"
+                                }
+                            ],
+                            "count": 3,
+                            "name": "Reporting Guideline"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Date and time format"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "OBO Foundary Ontology Collection"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Uniform Resource Identifier"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "NCBO BioPortal"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "SIFR BioPortal"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "AgroPortal"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "EcoPortal"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "BiodivPortal"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "EarthPortal"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "MedPortal"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "OntoBee"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Darwin Core List of Terms"
+                                }
+                            ],
+                            "count": 11,
+                            "name": "Terminology artefact"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Contributor Roles Taxonomy"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Multi-Standard Applicable"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Open Researcher and Contributor IDentifier"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Research Organization Registry"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Principles of identification"
+                                }
+                            ],
+                            "count": 3,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 19,
+                    "name": "General Best Practices"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Metadata Schema for the Persistent Identification of Instruments (1.0)"
+                                }
+                            ],
+                            "count": 1,
+                            "name": "Model/Format"
+                        }
+                    ],
+                    "count": 1,
+                    "name": "Multi-Omics Applicable, General Best Practices"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "JavaScript Object Notation"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "JavaScript Object Notation for Linked Data"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Bioschemas"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Web ontology language"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "OBO file format"
+                                }
+                            ],
+                            "count": 5,
+                            "name": "Model/Format"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "Mondo Disease Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "NCBI Taxonomy"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Cell Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "BRENDA tissue / enzyme source"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Gene Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Ontology for Biomedical Investigations"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Ontology of bioscientific data analysis and data management"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Human Phenotype Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Software ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "The Statistical Methods Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Basic Formal Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Environmental Factor Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Units of Measure Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Phenotype And Trait Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Uber-anatomy ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Ontology of Microbial Phenotypes"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "OBO Relations Ontology"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Plant Ontology"
+                                }
+                            ],
+                            "count": 18,
+                            "name": "Terminology artefact"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "ISA Metadata Framework"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Linked Data Modeling Language"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Research Object Crate"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Universally Unique Identifier/Globally Unique Identifier"
+                                }
+                            ],
+                            "count": 4,
+                            "name": "Multi-Standard Applicable"
+                        }
+                    ],
+                    "count": 27,
+                    "name": "Multi-Omics Applicable"
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "count": 1,
+                                    "name": "International Generic Sample Number"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Identifiers.org namespace"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Compact URI"
+                                },
+                                {
+                                    "count": 1,
+                                    "name": "Research Resource Identifier"
+                                }
+                            ],
+                            "count": 4,
+                            "name": "Identifier Schema"
+                        }
+                    ],
+                    "count": 4,
+                    "name": "Other"
+                }
+            ],
+            "count": 56,
+            "name": "Universal"
+        }
+    ],
+    "count": 243,
+    "name": "Standards"
+}
