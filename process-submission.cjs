@@ -60,7 +60,7 @@ function initialiseDataIndex(data) {
 function replaceKeyInObjectArray(data, replaceMap = REPLACEMAP) {
 	// Remap the keys from the GitHub template to those of the database
 	// https://stackoverflow.com/a/27806458
-	return data.map(o => Object.keys(o).map((key) => ({ [replaceMap[key] || key] : o[key] })).reduce((data, b) => Object.assign({}, data, b)))
+	return Object.keys(data).map((key) => ({ [replaceMap[key] || key] : data[key] })).reduce((data, b) => Object.assign({}, data, b))
 }
 
 function getFormalIdentifier(num, term = standard, length = LEADINGZEROS) {
