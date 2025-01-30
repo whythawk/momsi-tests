@@ -53,10 +53,10 @@
       "identifier": "ORDER_P:00002"
     },
     {
-      "flavour": "Chicken and Mushroom",
+      "flavour": "Veg Tikka",
       "size": "Regular",
       "toppings": "Sweet Corn",
-      "count": "685",
+      "count": "5",
       "i_acknowledge_that_submitting_this_issue_does_not_claim_a_real_pizza_order": [
         "Confirm"
       ],
