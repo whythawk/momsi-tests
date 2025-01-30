@@ -1,7 +1,7 @@
 const fs = require('fs')
 const eventPayload = require(process.env.GITHUB_EVENT_PATH)
 const standard = String(fs.readFileSync('submitter.txt', 'utf-8')).trim()
-const title = String(fs.readFileSync('title.txt', 'utf-8')).trim()
+const title = eventPayload.title
 let submission = JSON.parse(fs.readFileSync('order.json', 'utf-8'))
 let data = JSON.parse(fs.readFileSync('./src/data/data.json', 'utf-8'))
 const leadingZeros = 5
@@ -10,7 +10,6 @@ const prefix = {
 	"burgers": "ORDER_B:",
 	"pizzas": "ORDER_P:"
 }
-console.log("eventPayload", eventPayload)
 
 function initialiseDataIndex(data) {
 	// Check that database is properly indexed, and index if it isn't
@@ -33,6 +32,8 @@ function getFormalIdentifier(num, term = standard, length = leadingZeros) {
 }
 
 function checkIdentifier(title, submission, data) {
+  // If the title refers to an existing Standard, then update that entirely
+  // Else generate a new identifier and push that to the database
   if (title.startsWith(`[${prefix[term]}:`)) {
 	  submission["identifier"] = title.slice(1,13)
 	  // https://stackoverflow.com/a/39529049
@@ -55,7 +56,7 @@ const amount = parseInt(count.slice(0,3), 10) || 1;
 const content = `1. [@${user}](https://github.com/${user}) orders ${amount} ${size} ${flavour} burger with ${toppings}\n`;
 
 data = initialiseDataIndex(data)
-data[standard].push(submission)
+data = checkIdentifier(title, submission, data)
 fs.writeFileSync('./src/data/data.json', JSON.stringify(data, null, '  '))
 
 fs.appendFileSync('README.md', content);
