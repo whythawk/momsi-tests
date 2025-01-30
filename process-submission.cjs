@@ -44,7 +44,7 @@ function getFormalIdentifier(num, term = standard, length = leadingZeros) {
 	return `${INDICATORS[term]}:${num}`
 }
 
-function checkIdentifier(title = title, submission = submission, data = data, term = standard, contributor = contributor) {
+function checkIdentifier(title = title, submission = submission, data = data, term = standard, contributor = null) {
   // If the title refers to an existing Standard, then update that entirely
   // Else generate a new identifier and push that to the database
   submission["Contributor"] = contributor
@@ -65,7 +65,7 @@ function checkIdentifier(title = title, submission = submission, data = data, te
 }
 
 data = initialiseDataIndex(data)
-data = checkIdentifier(title, submission, data, standard)
+data = checkIdentifier(title, submission, data, standard, contributor)
 fs.writeFileSync('./src/data/database.json', JSON.stringify(data, null, '  '));
 
 // BUILD VISUALISATION AGGREGATIONS
