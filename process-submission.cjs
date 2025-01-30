@@ -94,7 +94,7 @@ function rebuildVisualisationAggregations(data, aggregation = STANDARDS_AGGREGAT
 			count: 0
 		}
 		// Build the hierarchy: "Domain Class/Subclass", "Standard Type", "Standard Name"
-		let classTerms = data[standard.toLowerCase()].map(item => term["Domain Class/Subclass"])
+		let classTerms = data[standard.toLowerCase()].map(item => item["Domain Class/Subclass"])
 		for (const classTerm of [...new Set(classTerms)]) {
 			const classChild = {
 				name: classTerm,
