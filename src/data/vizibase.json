@@ -127,13 +127,9 @@
                 {
                   "name": "Health informatics — Genomic Sequence Variation Markup Language (GSVML)",
                   "count": 1
-                },
-                {
-                  "name": "Sequence Ontology",
-                  "count": 2
                 }
               ],
-              "count": 27
+              "count": 25
             },
             {
               "name": "Reporting Guideline",
@@ -214,7 +210,7 @@
               "count": 1
             }
           ],
-          "count": 46
+          "count": 44
         },
         {
           "name": "Genomics, Transcriptomics",
@@ -535,7 +531,7 @@
           "count": 3
         }
       ],
-      "count": 94
+      "count": 92
     },
     {
       "name": "Proteomics",
@@ -1488,5 +1484,5 @@
       "count": 56
     }
   ],
-  "count": 246
+  "count": 244
 }
