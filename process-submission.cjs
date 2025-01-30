@@ -48,7 +48,7 @@ function checkIdentifier(title = title, submission = submission, data = data, te
   // If the title refers to an existing Standard, then update that entirely
   // Else generate a new identifier and push that to the database
   submission["contributor"] = contributor
-  if (submission.hasOwnProperty("Comment")) delete submission.Comment
+  if (submission.hasOwnProperty("comment")) delete submission.comment
   if (title.startsWith(`[${INDICATORS[term]}:`)) {
 	  submission["identifier"] = title.slice(1,14)
 	  // https://stackoverflow.com/a/39529049
@@ -64,7 +64,7 @@ function checkIdentifier(title = title, submission = submission, data = data, te
   return data
 }
 
-data = initialiseDataIndex(data)
+// data = initialiseDataIndex(data)
 data = checkIdentifier(title, submission, data, standard, contributor)
 fs.writeFileSync('./src/data/database.json', JSON.stringify(data, null, '  '));
 
