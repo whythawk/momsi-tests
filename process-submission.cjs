@@ -27,7 +27,7 @@ const LEADINGZEROS = 5
 function initialiseDataIndex(data) {
 	// Check that database is properly indexed, and index if it isn't
 	for (const term of STANDARDS) {
-		if (data[term.toLowerCase()].length && !data[term.toLowerCase()][0].hasOwnProperty("Identifier")) {
+		if (data[term.toLowerCase()].length && !data[term.toLowerCase()][0].hasOwnProperty("identifier")) {
 			data[term.toLowerCase()] = data[term.toLowerCase()].map((item, index) => ({ ...item, identifier: `${getFormalIdentifier(index + 1, term)}`}))
 		}
 	}
@@ -47,19 +47,19 @@ function getFormalIdentifier(num, term = standard, length = LEADINGZEROS) {
 function checkIdentifier(title = title, submission = submission, data = data, term = standard, contributor = null) {
   // If the title refers to an existing Standard, then update that entirely
   // Else generate a new identifier and push that to the database
-  submission["Contributor"] = contributor
+  submission["contributor"] = contributor
   if (submission.hasOwnProperty("Comment")) delete submission.Comment
   if (title.startsWith(`[${INDICATORS[term]}:`)) {
-	  submission["Identifier"] = title.slice(1,14)
+	  submission["identifier"] = title.slice(1,14)
 	  // https://stackoverflow.com/a/39529049
-	  const indexOfTerm = data[standard].findIndex(item => item.Identifier === submission.Identifier)
+	  const indexOfTerm = data[standard].findIndex(item => item.identifier === submission.identifier)
 	  if (indexOfTerm) {
 		  data[standard][indexOfTerm] = submission
 		  return data
 	  }
   }
   // Default, create an identifier and append
-  submission["Identifier"] = getFormalIdentifier(data[standard].length + 1)
+  submission["identifier"] = getFormalIdentifier(data[standard].length + 1)
   data[standard].push(submission)
   return data
 }
