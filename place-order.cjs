@@ -32,7 +32,7 @@ function getFormalIdentifier(num, term = standard, length = leadingZeros) {
 	return `${prefix[term]}:${num}`
 }
 
-function checkIdentifier(title, submission, data) {
+function checkIdentifier(title = title, submission = submission, data = data, term = standard) {
   // If the title refers to an existing Standard, then update that entirely
   // Else generate a new identifier and push that to the database
   if (title.startsWith(`[${prefix[term]}:`)) {
@@ -57,7 +57,7 @@ const amount = parseInt(count.slice(0,3), 10) || 1;
 const content = `1. [@${user}](https://github.com/${user}) orders ${amount} ${size} ${flavour} burger with ${toppings}\n`;
 
 data = initialiseDataIndex(data)
-data = checkIdentifier(title, submission, data)
+data = checkIdentifier(title, submission, data, standard)
 fs.writeFileSync('./src/data/data.json', JSON.stringify(data, null, '  '))
 
 fs.appendFileSync('README.md', content);
