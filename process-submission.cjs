@@ -80,7 +80,7 @@ function getStandardCounts(classTerm, subclassTerm, data) {
 	let counts = {}
 	const filteredTerms = data.filter((item) => item["Domain Class/Subclass"] === classTerm && item["Standard Type"] === subclassTerm)
 	for (const term of filteredTerms.map(item => item["Standard Name"])) {
-		if (counts.hasOwnProperty(term) counts[term] += 1
+		if (counts.hasOwnProperty(term)) counts[term] += 1
 		else counts[term] = 1
 	}
 	return counts		
