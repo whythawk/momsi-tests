@@ -34,7 +34,7 @@ function initialiseDataIndex(data) {
 	return data
 }
 
-function getFormalIdentifier(num, term = standard, length = leadingZeros) {
+function getFormalIdentifier(num, term = standard, length = LEADINGZEROS) {
 	// Generate an appropriately-formatted identifier with leading zeros
 	// ref: https://javascripts.com/pad-leading-zeros-in-javascript/
 	num = num.toString()
