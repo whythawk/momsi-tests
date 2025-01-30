@@ -40,7 +40,7 @@ function checkIdentifier(title = title, submission = submission, data = data, te
 	  // https://stackoverflow.com/a/39529049
 	  const indexOfTerm = data[standard].findIndex(item => item.identifier === submission.identifier)
 	  if (indexOfTerm) {
-		  submission["identifier"] = identifier
+		  // submission["identifier"] = identifier
 		  data[standard][indexOfTerm] = submission
 		  return data
 	  }
