@@ -2142,6 +2142,31 @@
       "comments": "",
       "Contributor": "turukawa",
       "Identifier": "MOMSI_G:00093"
+    },
+    {
+      "standard-type": "Model/Format",
+      "status": "Established/Maintained",
+      "country": "Worldwide",
+      "domain-class-subclass": "Genomics",
+      "application-technology": "Sequencing (general)",
+      "standard-name": "Sequence Ontology",
+      "acronym": "SO",
+      "plan": "Computed Analysis Design",
+      "collect": "Sample Preparation",
+      "process": "All of the above",
+      "analysis": "All of the above",
+      "preservation": "All of the above",
+      "sharing": "Knowledgebase (machine-readable)",
+      "reuse": "Conditional based on linked standards",
+      "meets-criteria": [],
+      "active-affiliations": "The Sequence Ontology (SO)",
+      "homepage": "http://www.sequenceontology.org/",
+      "reference-article-citation-doi": "https://doi.org/10.1186/gb-2005-6-5-r44",
+      "reference-source-code-doi": "https://github.com/The-Sequence-Ontology/SO-Ontologies",
+      "fairsharing-record-doi": "https://doi.org/10.25504/FAIRsharing.6bc7h9",
+      "comments": "",
+      "Contributor": "turukawa",
+      "Identifier": "MOMSI_G:00094"
     }
   ],
   "metabolomics": [
