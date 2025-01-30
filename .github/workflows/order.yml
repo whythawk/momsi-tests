@@ -108,7 +108,7 @@ jobs:
 
             - run: cat submitter.txt
             - run: cat title.txt
-            - run: node ./place-order.js
+            - run: node ./place-order.cjs
             
             - name: Commit changes
               shell: bash
