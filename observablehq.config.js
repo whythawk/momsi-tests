@@ -13,7 +13,8 @@ export default {
         {name: "Cluster", path: "/example-cluster"},
         {name: "Radial", path: "/exemple-radial"},
         {name: "Sunburst", path: "/example-sunburst"},
-        {name: "Cumulative sunburst", path: "/example-cumulative-sunburst"}
+        {name: "Cumulative sunburst", path: "/example-cumulative-sunburst"},
+		{name: "Circle packing", path: "/example-circle"}
       ]
     }
   ],

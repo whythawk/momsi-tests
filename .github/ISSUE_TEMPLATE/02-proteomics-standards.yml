@@ -47,11 +47,57 @@ body:
     attributes:
       label: Domain Class/Subclass
       description: What is the domain class or -subclass of the standard?
+      multiple: true
       options:
         - Proteomics
         - Metaproteomics
         - Proteomics/Metaproteomics
         - Multi-omics Applicable
+    validations:
+      required: true
+  - type: dropdown
+    id: application-technology
+    attributes:
+      label: Application Technology
+      description: What is the application technology of the standard?
+      multiple: true
+      options:
+        - Mass Spectrometry (general)
+        - Tandem Mass Tag (TMT) Mass Spectrometry
+        - Gas Chromatography-Mass Spectrometry (GC-MS)
+        - Liquid Chromatography-Mass Spectrometry (LC-MS)
+        - Capillary Electrophoresis–Mass Spectrometry (CE-MS)
+        - Ion Mobility Mass Spectrometry (IM-MS)
+        - Thermal Ionization Mass Spectrometry (TIMS)
+        - Time-of-Flight Mass Spectrometer (TOF)
+        - Single Particle Mass Spectrometry (SPMS)
+        - Fourier-Transform Ion Cyclotron Resonance-Mass Spectrometry (FT-ICR-MS)
+        - Ion Mobility Spectrometry Time-of-Flight Mass Spectrometry (IMS-TOF MS)
+        - Matrix-Assisted Laser Desorption/Ionization (MALDI) Mass Spectrometry
+        - MALDI-TOF
+        - AP-MALDI
+        - MALDI-FT-ICR
+        - Isotope-Ratio Mass Spectrometry (IRMS)
+        - Inductively Coupled Plasma-Mass Spectrometry (ICP-MS)
+        - Accelerator mass spectrometry (AMS)
+        - Spark Source Mass Spectrometry (SSMS)
+        - Tandem Mass Spectrometry
+        - Secondary Ion Mass Spectrometry (SIMS)
+        - Mass Spectrometry (general)
+        - Gas Chromatography-Mass Spectrometry (GC-MS)
+        - Liquid Chromatography-Mass Spectrometry (LC-MS)
+        - Capillary Electrophoresis–Mass Spectrometry (CE-MS)
+        - Ion Mobility Mass Spectrometry (IM-MS)
+        - Thermal Ionization Mass Spectrometry (TIMS)
+        - Time-of-Flight Mass Spectrometer (TOF)
+        - Single Particle Mass Spectrometry (SPMS)
+        - Fourier-Transform Ion Cyclotron Resonance-Mass Spectrometry (FT-ICR-MS)
+        - Ion Mobility Spectrometry Time-of-Flight Mass Spectrometry (IMS-TOF MS)
+        - Matrix-Assisted Laser Desorption/Ionization (MALDI) Mass Spectrometry
+        - MALDI-TOF
+        - AP-MALDI
+        - MALDI-FT-ICR
+        - Other
     validations:
       required: true
   - type: input
@@ -204,24 +250,6 @@ body:
       label: FAIRsharing Record (DOI or URL)
       description: Provide a URL or DOI for relevant references?
       placeholder: e.g. https://fairsharing.org/5383
-  - type: input
-    id: help-documentation
-    attributes:
-      label: Help Documentation
-      description: Provide a URL for help documentation?
-      placeholder: e.g. https://www.earthbiogenome.org/analysis-standards-report
-  - type: input
-    id: related-database
-    attributes:
-      label: Related Database
-      description: What databases are related to this standard?
-      placeholder: e.g. Proteowizard
-  - type: input
-    id: related-standards
-    attributes:
-      label: Related Standards
-      description: What standards are related to this standard?
-      placeholder: "e.g. mzML, mzSpecLib, HDF5"
   - type: textarea
     id: comments
     attributes:

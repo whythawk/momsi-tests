@@ -1,0 +1,102 @@
+[
+    {
+        "count": 25,
+        "standard": "Genomics",
+        "type": "Reporting Guideline"
+    },
+    {
+        "count": 16,
+        "standard": "Proteomics",
+        "type": "Reporting Guideline"
+    },
+    {
+        "count": 10,
+        "standard": "Metabolomics",
+        "type": "Reporting Guideline"
+    },
+    {
+        "count": 3,
+        "standard": "Universal",
+        "type": "Reporting Guideline"
+    },
+    {
+        "count": 12,
+        "standard": "Genomics",
+        "type": "Terminology artefact"
+    },
+    {
+        "count": 4,
+        "standard": "Proteomics",
+        "type": "Terminology artefact"
+    },
+    {
+        "count": 9,
+        "standard": "Metabolomics",
+        "type": "Terminology artefact"
+    },
+    {
+        "count": 29,
+        "standard": "Universal",
+        "type": "Terminology artefact"
+    },
+    {
+        "count": 47,
+        "standard": "Genomics",
+        "type": "Model/Format"
+    },
+    {
+        "count": 17,
+        "standard": "Proteomics",
+        "type": "Model/Format"
+    },
+    {
+        "count": 21,
+        "standard": "Metabolomics",
+        "type": "Model/Format"
+    },
+    {
+        "count": 7,
+        "standard": "Universal",
+        "type": "Model/Format"
+    },
+    {
+        "count": 5,
+        "standard": "Genomics",
+        "type": "Identifier Schema"
+    },
+    {
+        "count": 3,
+        "standard": "Proteomics",
+        "type": "Identifier Schema"
+    },
+    {
+        "count": 7,
+        "standard": "Metabolomics",
+        "type": "Identifier Schema"
+    },
+    {
+        "count": 10,
+        "standard": "Universal",
+        "type": "Identifier Schema"
+    },
+    {
+        "count": 2,
+        "standard": "Genomics",
+        "type": "Multi-Standard Applicable"
+    },
+    {
+        "count": 4,
+        "standard": "Proteomics",
+        "type": "Multi-Standard Applicable"
+    },
+    {
+        "count": 5,
+        "standard": "Metabolomics",
+        "type": "Multi-Standard Applicable"
+    },
+    {
+        "count": 5,
+        "standard": "Universal",
+        "type": "Multi-Standard Applicable"
+    }
+]

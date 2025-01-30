@@ -47,11 +47,30 @@ body:
     attributes:
       label: Domain Class/Subclass
       description: What is the domain class or -subclass of the standard?
+      multiple: true
       options:
         - Metabolomics
         - Lipidomics
         - Metabolomics/Lipidomics
         - Multi-omics Applicable
+    validations:
+      required: true
+  - type: dropdown
+    id: application-technology
+    attributes:
+      label: Application Technology
+      description: What is the application technology of the standard?
+      multiple: true
+      options:
+        - Isotope-Ratio Mass Spectrometry (IRMS)
+        - Inductively Coupled Plasma-Mass Spectrometry (ICP-MS)
+        - Accelerator mass spectrometry (AMS)
+        - Spark Source Mass Spectrometry (SSMS)
+        - Tandem Mass Spectrometry
+        - Nuclear Magnetic Resonance (NMR)
+        - Secondary Ion Mass Spectrometry (SIMS)
+        - Mass Spectrometry Imaging (MSI)
+        - Other
     validations:
       required: true
   - type: input
@@ -204,24 +223,6 @@ body:
       label: FAIRsharing Record (DOI or URL)
       description: Provide a URL or DOI for relevant references?
       placeholder: e.g. https://fairsharing.org/5383
-  - type: input
-    id: help-documentation
-    attributes:
-      label: Help Documentation
-      description: Provide a URL for help documentation?
-      placeholder: e.g. https://www.earthbiogenome.org/analysis-standards-report
-  - type: input
-    id: related-database
-    attributes:
-      label: Related Database
-      description: What databases are related to this standard?
-      placeholder: e.g. LIPID MAPS
-  - type: input
-    id: related-standards
-    attributes:
-      label: Related Standards
-      description: What standards are related to this standard?
-      placeholder: "e.g. model/format: GFF3"
   - type: textarea
     id: comments
     attributes:

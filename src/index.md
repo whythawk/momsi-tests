@@ -4,7 +4,7 @@ theme: [cotton]
 ---
 
 ```js
-const agg = FileAttachment("data/vizibase.json").json();
+const typdata = FileAttachment("data/typebase.json").json();
 ```
 
 <div class="hero">
@@ -12,32 +12,32 @@ const agg = FileAttachment("data/vizibase.json").json();
   <h2>Welcome to your new app!</h2>
 </div>
 
-<!-- Cards with big numbers -->
+---
 
-<div class="grid grid-cols-4">
-  <div class="card">
-    <h2>Genomics</h2>
-    <span class="big">${agg.children.find((s) => s.name === "Genomics").count}</span>
-  </div>
-  <div class="card">
-    <h2>Proteomics</h2>
-    <span class="big">${agg.children.find((s) => s.name === "Proteomics").count}</span>
-  </div>
-  <div class="card">
-    <h2>Metabolomics</h2>
-    <span class="big">${agg.children.find((s) => s.name === "Metabolomics").count}</span>
-  </div>
-  <div class="card">
-    <h2>Universal</h2>
-    <span class="big">${agg.children.find((s) => s.name === "Universal").count}</span>
-  </div>
-</div>
+<div class="card">${
+    resize((width) => Plot.plot({
+      title: "MOMSI WG Landscape Review Live Summary",
+      width,
+      x: {axis: null, label: "Standard Type"},
+      y: {tickFormat: "s", grid: true, label: "Count"},
+	  color: {legend: true},
+      marks: [
+		Plot.barY(typdata, {
+		  x: "standard",
+		  y: "count",
+		  fill: "standard",
+		  fx: "type",
+		  sort: {x: null, color: null, fx: {value: "-y", reduce: "sum"}}
+		}),
+		Plot.ruleY([0])
+	  ]
+    }))
+  }</div>
 
 ---
 
 ```js
 import {Mutable} from "observablehq:stdlib";
-
 const data = await FileAttachment("data/database.json").json()
 const dataColumns = {
 	"genomics": ["Standard Name", "Acronym", "Standard Type", "Status", "Country", "Domain Class/Subclass", "Application Technology", "Plan", "Collect", "Process", "Analysis", "Preservation", "Sharing", "Reuse", "Meets Criteria", "Active Affiliation(s)", "Homepage", "Reference Article Citation (DOI)", "Reference Source Code (DOI or URL)", "FAIRsharing Record (DOI or URL)", "Identifier"],
@@ -48,6 +48,20 @@ const dataColumns = {
 let standardChoice = Mutable("genomics")
 let columnChoice = Mutable(dataColumns["genomics"])
 let dataChoice = Mutable(data["genomics"])
+const dataFormatTemplate = {
+	"genomics": "01-genomics-standards.yml",
+	"proteomics": "02-proteomics-standards.yml",
+	"metabolomics": "03-metabolomics-standards.yml",
+	"universal": "04-universal-standards.yml"
+}
+const dataFormat = {
+	"Homepage": url => htl.html`<a href=${url} target=_blank>🔗</a>`,
+	"Reference Article Citation (DOI)": url => htl.html`<a href=${url} target=_blank>🔗</a>`,
+	"Reference Source Code (DOI or URL)": url => htl.html`<a href=${url} target=_blank>🔗</a>`,
+	"FAIRsharing Record (DOI or URL)": url => htl.html`<a href=${url} target=_blank>🔗</a>`,
+	"Reference Source Code (URL)": url => htl.html`<a href=${url} target=_blank>🔗</a>`,
+	"Identifier": id => htl.html`<a href=https://github.com/whythawk/momsi-tests/issues/new?template=${dataFormatTemplate[standardChoice.value]}&title=[${id}]+Update+submission target=_blank>🖋️ Update</a>`
+}
 
 function changeStandardChoice(value) {
 	standardChoice.value = value
@@ -76,41 +90,11 @@ const searchU = Generators.input(searchUInput);
      : standardChoice === "proteomics" ? searchPInput 
 	 : standardChoice === "metabolomics" ? searchMInput 
 	 : standardChoice === "universal" ? searchUInput : "" }
-  ${ standardChoice === "genomics" ? Inputs.table(searchG, {columns: columnChoice}) 
-     : standardChoice === "proteomics" ? Inputs.table(searchP, {columns: columnChoice}) 
-	 : standardChoice === "metabolomics" ? Inputs.table(searchM, {columns: columnChoice}) 
-	 : standardChoice === "universal" ? Inputs.table(searchU, {columns: columnChoice}) : "" }
-</div>
-
----
-
-<div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
-  <div class="card">${
-    resize((width) => Plot.plot({
-      title: "Your awesomeness over time 🚀",
-      subtitle: "Up and to the right!",
-      width,
-      y: {grid: true, label: "Awesomeness"},
-      marks: [
-        Plot.ruleY([0]),
-        Plot.lineY(aapl, {x: "Date", y: "Close", tip: true})
-      ]
-    }))
-  }</div>
-  <div class="card">${
-    resize((width) => Plot.plot({
-      title: "How big are penguins, anyway? 🐧",
-      width,
-      grid: true,
-      x: {label: "Body mass (g)"},
-      y: {label: "Flipper length (mm)"},
-      color: {legend: true},
-      marks: [
-        Plot.linearRegressionY(penguins, {x: "body_mass_g", y: "flipper_length_mm", stroke: "species"}),
-        Plot.dot(penguins, {x: "body_mass_g", y: "flipper_length_mm", stroke: "species", tip: true})
-      ]
-    }))
-  }</div>
+  ${ standardChoice === "genomics" ? Inputs.table(searchG, {columns: columnChoice, format: dataFormat})
+     : standardChoice === "proteomics" ? Inputs.table(searchP, {columns: columnChoice, format: dataFormat})
+	 : standardChoice === "metabolomics" ? Inputs.table(searchM, {columns: columnChoice, format: dataFormat})
+	 : standardChoice === "universal" ? Inputs.table(searchU, {columns: columnChoice, format: dataFormat})
+	 : "" }
 </div>
 
 <style>

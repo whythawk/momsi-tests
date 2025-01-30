@@ -47,6 +47,7 @@ body:
     attributes:
       label: Domain Class/Subclass
       description: What is the domain class or -subclass of the standard?
+      multiple: true
       options:
         - FAIR Principles
         - CARE Principles
@@ -206,24 +207,6 @@ body:
       label: FAIRsharing Record (DOI or URL)
       description: Provide a URL or DOI for relevant references?
       placeholder: e.g. https://doi.org/10.25504/FAIRsharing.hFLKCn
-  - type: input
-    id: help-documentation
-    attributes:
-      label: Help Documentation
-      description: Provide a URL for help documentation?
-      placeholder: e.g. https://www.doi.org/the-identifier/resources/
-  - type: input
-    id: related-database
-    attributes:
-      label: Related Database
-      description: What databases are related to this standard?
-      placeholder: e.g. microPublications, NCBI GenBank
-  - type: input
-    id: related-standards
-    attributes:
-      label: Related Standards
-      description: What standards are related to this standard?
-      placeholder: "e.g. model/format: GFF3"
   - type: textarea
     id: comments
     attributes:
