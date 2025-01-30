@@ -21,7 +21,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Sequence Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00001"
     },
     {
       "Acronym": "FHR",
@@ -44,7 +45,8 @@
       "Sharing": "All of the above",
       "Standard Name": "FAIR Header Reference Genome",
       "Standard Type": "Model/Format",
-      "Status": "In Development"
+      "Status": "In Development",
+      "identifier": "undefined:00002"
     },
     {
       "Acronym": "MIxS",
@@ -67,7 +69,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Minimum Information about any Sequence",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00003"
     },
     {
       "Acronym": "MIAME",
@@ -90,7 +93,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimum Information About Microarray Experiment",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00004"
     },
     {
       "Acronym": "GFF3",
@@ -113,7 +117,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Generic Feature Format Version 3",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00005"
     },
     {
       "Acronym": "GSCID/BRC",
@@ -136,7 +141,8 @@
       "Sharing": "All of the above",
       "Standard Name": "GSCID/BRC Project and Sample Application Standard",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00006"
     },
     {
       "Acronym": "MINSEQ",
@@ -159,7 +165,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimum Information about a high-throughput SEQuencing Experiment",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00007"
     },
     {
       "Acronym": "DMID",
@@ -182,7 +189,8 @@
       "Sharing": "All of the above",
       "Standard Name": "GSCID/BRC Clinical Metadata Standard",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00008"
     },
     {
       "Acronym": "VCF",
@@ -205,7 +213,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Variant Call Format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00009"
     },
     {
       "Acronym": "FASTA",
@@ -228,7 +237,8 @@
       "Sharing": "All of the above",
       "Standard Name": "FASTA Sequence Format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00010"
     },
     {
       "Acronym": "FASTQ",
@@ -251,7 +261,8 @@
       "Sharing": "All of the above",
       "Standard Name": "FASTQ Nucleotide Sequence Format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00011"
     },
     {
       "Acronym": "MAGE-TAB",
@@ -274,7 +285,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "MIAME-supportive format for microarray data",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00012"
     },
     {
       "Acronym": "ISO 4454:2022",
@@ -297,7 +309,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Phenopackets: A format for phenotypic data exchange",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00013"
     },
     {
       "Acronym": "SAM",
@@ -320,7 +333,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Sequence Alignment Map text-based format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00014"
     },
     {
       "Acronym": "BEACON",
@@ -343,7 +357,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Beacon framework and data model",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00015"
     },
     {
       "Acronym": "EBP1",
@@ -366,7 +381,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "Quantitative Assembly standards ",
       "Standard Type": "Reporting Guideline",
-      "Status": "In Development"
+      "Status": "In Development",
+      "identifier": "undefined:00016"
     },
     {
       "Acronym": "WGS",
@@ -389,7 +405,8 @@
       "Sharing": "All of the above",
       "Standard Name": "WGS Quality Control Standards",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "In Development"
+      "Status": "In Development",
+      "identifier": "undefined:00017"
     },
     {
       "Acronym": "BAM",
@@ -412,7 +429,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Binary Alignment Map extension format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00018"
     },
     {
       "Acronym": "CRAM",
@@ -435,7 +453,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Compressed Reference-oriented Alignment Map compressed columnar file format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00019"
     },
     {
       "Acronym": "CLUSTALW",
@@ -458,7 +477,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "CLUSTAL-W Multiple Sequence Alignment text-based format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00020"
     },
     {
       "Acronym": "Hi-C",
@@ -481,7 +501,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Pairs file format specification draft 1.0",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00021"
     },
     {
       "Acronym": "GTF",
@@ -504,7 +525,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Gene Transfer Format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00022"
     },
     {
       "Acronym": "PHYLIP",
@@ -527,7 +549,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Multiple Sequence Alignment File Format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00023"
     },
     {
       "Acronym": "NWK",
@@ -550,7 +573,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Newick Tree",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00024"
     },
     {
       "Acronym": "PhyloXML",
@@ -573,7 +597,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "XML for evolutionary biology and comparative genomics",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00025"
     },
     {
       "Acronym": "MIMS",
@@ -596,7 +621,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimum information about a metagenome sequence",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00026"
     },
     {
       "Acronym": "MIGS-BA",
@@ -619,7 +645,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimal Information about a Genome Sequence: cultured bacteria/archaea",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00027"
     },
     {
       "Acronym": "MIGS-EU",
@@ -642,7 +669,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimal Information about a Genome Sequence: eukaryote",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00028"
     },
     {
       "Acronym": "MIGS-ORG",
@@ -665,7 +693,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimal Information about a Genome Sequence: organelle",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00029"
     },
     {
       "Acronym": "MIGS-PI",
@@ -688,7 +717,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimal Information about a Genome Sequence: plasmid",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00030"
     },
     {
       "Acronym": "MIGS-VI",
@@ -711,7 +741,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimal Information about a Genome Sequence: virus",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00031"
     },
     {
       "Acronym": "MIMARK",
@@ -734,7 +765,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimum information about a marker gene sequence",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00032"
     },
     {
       "Acronym": "MISAG",
@@ -757,7 +789,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimum information about a single amplified genome sequence",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00033"
     },
     {
       "Acronym": "MIMAG",
@@ -780,7 +813,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimum information about a metagenome-assembled genome sequence",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00034"
     },
     {
       "Acronym": "MIUViG",
@@ -803,7 +837,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimum Information about an Uncultivated Virus Genome",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00035"
     },
     {
       "Acronym": "STORMS",
@@ -826,7 +861,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "Reporting guidelines for human microbiome research: STORMS Checklist",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00036"
     },
     {
       "Acronym": "GA4GH-VRS",
@@ -849,7 +885,8 @@
       "Sharing": "All of the above",
       "Standard Name": "GA4GH Variation Representation Specification",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00037"
     },
     {
       "Acronym": "HDF5/h5",
@@ -872,7 +909,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Hierarchical Data Format HDF5 genomic file",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00038"
     },
     {
       "Acronym": null,
@@ -895,7 +933,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "NCBI Taxonomy identifier schema",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00039"
     },
     {
       "Acronym": "BioPAX",
@@ -918,7 +957,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Biological Pathway Exchange",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00040"
     },
     {
       "Acronym": "PED",
@@ -941,7 +981,8 @@
       "Sharing": "All of the above",
       "Standard Name": "PLINK pedigree/phenotype information",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00041"
     },
     {
       "Acronym": "SBML",
@@ -964,7 +1005,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Systems Biology Markup Language",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00042"
     },
     {
       "Acronym": "GenBank ID",
@@ -987,7 +1029,8 @@
       "Sharing": "All of the above",
       "Standard Name": "GenBank Schema",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00043"
     },
     {
       "Acronym": "ENA EMBL XSD",
@@ -1010,7 +1053,8 @@
       "Sharing": "All of the above",
       "Standard Name": "ENA Sequence XML Schema",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00044"
     },
     {
       "Acronym": "FAM",
@@ -1033,7 +1077,8 @@
       "Sharing": "All of the above",
       "Standard Name": "PLINK sample information file",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00045"
     },
     {
       "Acronym": "FAIRtracks",
@@ -1056,7 +1101,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "FAIRtracks metadata schema",
       "Standard Type": "Model/Format",
-      "Status": "In Development"
+      "Status": "In Development",
+      "identifier": "undefined:00046"
     },
     {
       "Acronym": "AIRR Repertoire",
@@ -1079,7 +1125,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Adaptive Immune Receptor Repertoire Standard",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00047"
     },
     {
       "Acronym": "AIRR Rearrangement",
@@ -1102,7 +1149,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Adaptive Immune Receptor Repertoire Rearrangement Standard",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00048"
     },
     {
       "Acronym": "MiAIRR",
@@ -1125,7 +1173,8 @@
       "Sharing": null,
       "Standard Name": "Minimal Standard for Adaptive Immune Receptor Repertoires",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00049"
     },
     {
       "Acronym": "ADC API",
@@ -1148,7 +1197,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "AIRR Data Commons Standard for data queries",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00050"
     },
     {
       "Acronym": "CDE",
@@ -1171,7 +1221,8 @@
       "Sharing": "All of the above",
       "Standard Name": "NIH Common Data Elements",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00051"
     },
     {
       "Acronym": "bedMethyl",
@@ -1194,7 +1245,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Browser Extensible Data Methylation file format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00052"
     },
     {
       "Acronym": "bigBed",
@@ -1217,7 +1269,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Binary Index Browser Extensible Data file format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00053"
     },
     {
       "Acronym": "CIGAR",
@@ -1240,7 +1293,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Compact Ideosyncratic Gapped Alignment Report string format",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00054"
     },
     {
       "Acronym": "bigWig",
@@ -1263,7 +1317,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Browser Extensible Data Wiggle file format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00055"
     },
     {
       "Acronym": "bedpe",
@@ -1286,7 +1341,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Browser Extensible Data Paired-End file format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00056"
     },
     {
       "Acronym": "HGNC",
@@ -1309,7 +1365,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "HGNC Gene Symbols, Gene Names and IDs",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00057"
     },
     {
       "Acronym": "BED",
@@ -1332,7 +1389,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Browser Extensible Data file format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00058"
     },
     {
       "Acronym": "mirGFF3",
@@ -1355,7 +1413,8 @@
       "Sharing": "All of the above",
       "Standard Name": "miRNA pipeline file format",
       "Standard Type": "Model/Format",
-      "Status": "In Development"
+      "Status": "In Development",
+      "identifier": "undefined:00059"
     },
     {
       "Acronym": "GCDML",
@@ -1378,7 +1437,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Genomic Contextual Data Markup Language",
       "Standard Type": "Model/Format",
-      "Status": "Depreciated"
+      "Status": "Depreciated",
+      "identifier": "undefined:00060"
     },
     {
       "Acronym": null,
@@ -1401,7 +1461,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Minimal Information About a Phylogenetic Analysis Checklist",
       "Standard Type": "Reporting Guideline",
-      "Status": "Uncertain"
+      "Status": "Uncertain",
+      "identifier": "undefined:00061"
     },
     {
       "Acronym": "MINIMESS",
@@ -1424,7 +1485,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Minimal Metagenome Sequence Analysis Standard",
       "Standard Type": "Reporting Guideline",
-      "Status": "Depreciated"
+      "Status": "Depreciated",
+      "identifier": "undefined:00062"
     },
     {
       "Acronym": null,
@@ -1447,7 +1509,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Sample registration checklists",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00063"
     },
     {
       "Acronym": "GECKO",
@@ -1470,7 +1533,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Genomics Cohorts Knowledge Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00064"
     },
     {
       "Acronym": "GENEPIO",
@@ -1493,7 +1557,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Genomic Epidemiology Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00065"
     },
     {
       "Acronym": "PCL",
@@ -1516,7 +1581,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Provisional Cell Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00066"
     },
     {
       "Acronym": "MIAPA",
@@ -1539,7 +1605,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Minimal Information About a Phylogenetic Analysis Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00067"
     },
     {
       "Acronym": "GENO",
@@ -1562,7 +1629,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Genotype Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00068"
     },
     {
       "Acronym": "ORNASEQ",
@@ -1585,7 +1653,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Ontology of RNA Sequencing",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00069"
     },
     {
       "Acronym": "ARO",
@@ -1608,7 +1677,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Antibiotic Resistance Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00070"
     },
     {
       "Acronym": "EGO",
@@ -1631,7 +1701,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Epigenome Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00071"
     },
     {
       "Acronym": "FG",
@@ -1654,7 +1725,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "FAIR Genomes semantic metadata schema",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00072"
     },
     {
       "Acronym": "GOLD ID",
@@ -1677,7 +1749,8 @@
       "Sharing": "All of the above",
       "Standard Name": "JGI Genomes Online Database Identifier",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00073"
     },
     {
       "Acronym": "SAMN",
@@ -1700,7 +1773,8 @@
       "Sharing": "All of the above",
       "Standard Name": "NCBI BioSample Identifier",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00074"
     },
     {
       "Acronym": "PRJNA",
@@ -1723,7 +1797,8 @@
       "Sharing": "All of the above",
       "Standard Name": "NCBI BioProject Identifier",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00075"
     },
     {
       "Acronym": "ENVO",
@@ -1746,7 +1821,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Environment Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00076"
     },
     {
       "Acronym": "OORF-TRF",
@@ -1769,7 +1845,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "OECD Omics Reporting Framework for Transcriptomics in Regulatory Toxicology",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00077"
     },
     {
       "Acronym": null,
@@ -1792,7 +1869,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "General Genomic Reporting in FHIR",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00078"
     },
     {
       "Acronym": "ISO/TS 4424:2023",
@@ -1815,7 +1893,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Genomics informatics — Data elements and their metadata for describing the tumor mutation burden (TMB) information of clinical massive parallel DNA sequencing",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00079"
     },
     {
       "Acronym": "ISO/TS 4425:2023",
@@ -1838,7 +1917,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Genomics informatics — Data elements and their metadata for describing the microsatellite instability (MSI) information of clinical massive parallel DNA sequencing",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00080"
     },
     {
       "Acronym": "ISO/TS 8376:2023",
@@ -1861,7 +1941,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Genomics informatics — Requirements for interoperable systems for genomic surveillance",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00081"
     },
     {
       "Acronym": "ISO/TS 8392:2023",
@@ -1884,7 +1965,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Genomics informatics — Description rules for genomic data for genetic detection products and services",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00082"
     },
     {
       "Acronym": "ISO/TS 20428:2024",
@@ -1907,7 +1989,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Genomics Informatics — Data elements and their metadata for describing structured clinical genomic sequence information in electronic health records",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00083"
     },
     {
       "Acronym": "ISO 21393:2021",
@@ -1930,7 +2013,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Genomics informatics — Omics Markup Language (OML)",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00084"
     },
     {
       "Acronym": "ISO/TS 22690:2021",
@@ -1953,7 +2037,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Genomics informatics — Reliability assessment criteria for high-throughput gene-expression data",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00085"
     },
     {
       "Acronym": "ISO/TS 22692:2020",
@@ -1976,7 +2061,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Genomics informatics— Quality control metrics for DNA sequencing",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00086"
     },
     {
       "Acronym": "ISO/TS 22693:2021",
@@ -1999,7 +2085,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Genomics informatics — Structured clinical gene fusion report in electronic health records",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00087"
     },
     {
       "Acronym": "ISO/TS 23357:2023",
@@ -2022,7 +2109,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Genomics informatics — Clinical genomics data sharing specification for next-generation sequencing",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00088"
     },
     {
       "Acronym": "ISO 25720:2009",
@@ -2045,7 +2133,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Health informatics — Genomic Sequence Variation Markup Language (GSVML)",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00089"
     },
     {
       "Acronym": "SRA-XML",
@@ -2068,7 +2157,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Short Read Archive eXtensible Markup Language",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00090"
     },
     {
       "Acronym": "md5sum",
@@ -2091,7 +2181,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "MD5 Checksum File",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00091"
     },
     {
       "standard-type": "Terminology artefact",
@@ -2116,7 +2207,8 @@
       "fairsharing-record-doi": "https://doi.org/10.25504/FAIRsharing.6bc7h9",
       "comments": "",
       "Contributor": "turukawa",
-      "Identifier": "MOMSI_G:00092"
+      "Identifier": "MOMSI_G:00092",
+      "identifier": "undefined:00092"
     },
     {
       "standard-type": "Model/Format",
@@ -2141,7 +2233,8 @@
       "fairsharing-record-doi": "https://doi.org/10.25504/FAIRsharing.6bc7h9",
       "comments": "",
       "Contributor": "turukawa",
-      "Identifier": "MOMSI_G:00093"
+      "Identifier": "MOMSI_G:00093",
+      "identifier": "undefined:00093"
     },
     {
       "standard-type": "Model/Format",
@@ -2166,7 +2259,8 @@
       "fairsharing-record-doi": "https://doi.org/10.25504/FAIRsharing.6bc7h9",
       "comments": "",
       "Contributor": "turukawa",
-      "Identifier": "MOMSI_G:00094"
+      "Identifier": "MOMSI_G:00094",
+      "identifier": "undefined:00094"
     }
   ],
   "metabolomics": [
@@ -2191,7 +2285,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Metabolomics Standards Initiative Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00001"
     },
     {
       "Acronym": "mzTab-M",
@@ -2214,7 +2309,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "mzTab for Metabolomics",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00002"
     },
     {
       "Acronym": "ChEBI",
@@ -2237,7 +2333,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Chemical Entities of Biological Interest",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00003"
     },
     {
       "Acronym": "SDF",
@@ -2260,7 +2357,8 @@
       "Sharing": "Other",
       "Standard Name": "Structure Data Format",
       "Standard Type": "Model/Format",
-      "Status": "Uncertain"
+      "Status": "Uncertain",
+      "identifier": "undefined:00004"
     },
     {
       "Acronym": "InChI",
@@ -2283,7 +2381,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "IUPAC International Chemical Identifier",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00005"
     },
     {
       "Acronym": "ISA-TAB",
@@ -2306,7 +2405,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Investigation Study Assay Tabular",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00006"
     },
     {
       "Acronym": "OBI",
@@ -2329,7 +2429,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Ontology of Biomedical Investigations",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00007"
     },
     {
       "Acronym": "MIMIx",
@@ -2352,7 +2453,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Minimum Information about a Molecular Interaction Experiment",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00008"
     },
     {
       "Acronym": "CHMO",
@@ -2375,7 +2477,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Chemical Methods Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00009"
     },
     {
       "Acronym": "LM ID",
@@ -2398,7 +2501,8 @@
       "Sharing": "All of the above",
       "Standard Name": "LIPID MAPS classification identifiers",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00010"
     },
     {
       "Acronym": "MSP",
@@ -2421,7 +2525,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "NIST MS Search binary format and ASCII text format",
       "Standard Type": "Model/Format",
-      "Status": "Uncertain"
+      "Status": "Uncertain",
+      "identifier": "undefined:00011"
     },
     {
       "Acronym": "MGF",
@@ -2444,7 +2549,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Mascot Generic File Format",
       "Standard Type": "Model/Format",
-      "Status": "Uncertain"
+      "Status": "Uncertain",
+      "identifier": "undefined:00012"
     },
     {
       "Acronym": "SMILES",
@@ -2467,7 +2573,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Simplified molecular-input line-entry system chemical file format",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00013"
     },
     {
       "Acronym": "CAS RN",
@@ -2490,7 +2597,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "CAS Registry Number",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00014"
     },
     {
       "Acronym": "CID",
@@ -2513,7 +2621,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "PubChem Compound Identifier",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00015"
     },
     {
       "Acronym": "IUPAC",
@@ -2536,7 +2645,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Chemical IUPAC Name",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00016"
     },
     {
       "Acronym": "CHEMINF",
@@ -2559,7 +2669,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Chemical Information Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00017"
     },
     {
       "Acronym": "XLMOD",
@@ -2582,7 +2693,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "XLMOD Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00018"
     },
     {
       "Acronym": "PSI-MS CV",
@@ -2605,7 +2717,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "HUPO PSI Mass Spectrometry Controlled Vocabulary",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00019"
     },
     {
       "Acronym": "PSI-MI XML",
@@ -2628,7 +2741,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Molecular Interaction XML Format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00020"
     },
     {
       "Acronym": "HMDB ID",
@@ -2651,7 +2765,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "HMDB identifier (Primary Accession Number)",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00021"
     },
     {
       "Acronym": "InChIKey",
@@ -2674,7 +2789,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "International Chemical Identifier",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00022"
     },
     {
       "Acronym": "CDX",
@@ -2697,7 +2813,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Chemdraw CDX file",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00023"
     },
     {
       "Acronym": "nmrML",
@@ -2720,7 +2837,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "XML-based exchange and storage format for NMR spectral data",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00024"
     },
     {
       "Acronym": "mzML",
@@ -2743,7 +2861,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Raw mass spectrometer data XML format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00025"
     },
     {
       "Acronym": "MDL Molfile",
@@ -2766,7 +2885,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Chemical Connection Table (CT) open file format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00026"
     },
     {
       "Acronym": "PDBx/mmCIF",
@@ -2789,7 +2909,8 @@
       "Sharing": "All of the above",
       "Standard Name": "PDB Macromolecular Crystallographic Information File",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00027"
     },
     {
       "Acronym": "LSI",
@@ -2812,7 +2933,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Lipidomics Minimal Reporting Checklist",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00028"
     },
     {
       "Acronym": "SMART",
@@ -2835,7 +2957,8 @@
       "Sharing": "All of the above",
       "Standard Name": "A data reporting standard for mass spectrometry imaging",
       "Standard Type": "Reporting Guideline",
-      "Status": "Uncertain"
+      "Status": "Uncertain",
+      "identifier": "undefined:00029"
     },
     {
       "Acronym": "mzTab-L",
@@ -2858,7 +2981,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "mzTab for Lipidomics",
       "Standard Type": "Reporting Guideline",
-      "Status": "Depreciated"
+      "Status": "Depreciated",
+      "identifier": "undefined:00030"
     },
     {
       "Acronym": "USI",
@@ -2881,7 +3005,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Universal Spectrum Identifier",
       "Standard Type": "Identifier Schema",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00031"
     },
     {
       "Acronym": "RAW",
@@ -2904,7 +3029,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Thermo raw spectrum file format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00032"
     },
     {
       "Acronym": "ITA",
@@ -2927,7 +3053,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "ToF-SIMS depth profile file format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00033"
     },
     {
       "Acronym": "ITM",
@@ -2950,7 +3077,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "ToF-SIMS raw data file format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00034"
     },
     {
       "Acronym": "DAT",
@@ -2973,7 +3101,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Finnigan ITDS file format, MassLab data format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00035"
     },
     {
       "Acronym": "XYZ",
@@ -2996,7 +3125,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Mass spectrometry raw data proprietary file format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00036"
     },
     {
       "Acronym": "MFIF",
@@ -3019,7 +3149,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Minimal Feature Input Format",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00037"
     },
     {
       "Acronym": "mwTab",
@@ -3042,7 +3173,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Metabolomics Workbench Tabular File Format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00038"
     },
     {
       "Acronym": "RefMet",
@@ -3065,7 +3197,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Reference list of Metabolite names",
       "Standard Type": "Identifier Schema",
-      "Status": "In Development"
+      "Status": "In Development",
+      "identifier": "undefined:00039"
     },
     {
       "Acronym": "CIMR",
@@ -3088,7 +3221,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Core Information for Metabolomics Reporting",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00040"
     },
     {
       "Acronym": "nmrCV",
@@ -3111,7 +3245,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Nuclear Magnetic Resonance Markup Language",
       "Standard Type": "Terminology artefact",
-      "Status": "Depreciated"
+      "Status": "Depreciated",
+      "identifier": "undefined:00041"
     },
     {
       "Acronym": "LION",
@@ -3134,7 +3269,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Lipid Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Depreciated"
+      "Status": "Depreciated",
+      "identifier": "undefined:00042"
     },
     {
       "Acronym": "ANDI-MS",
@@ -3157,7 +3293,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Analytical Data Interchange Protocol for Chromatographic Data",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00043"
     },
     {
       "Acronym": "ISA-TAB-Nano",
@@ -3180,7 +3317,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "A specification for sharing nanomaterial research data in spreadsheet-based format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00044"
     },
     {
       "Acronym": "ChAMP",
@@ -3203,7 +3341,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Chemical Analysis Metadata Platform",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00045"
     },
     {
       "Acronym": "ThermoML",
@@ -3226,7 +3365,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Thermochemical Markup Language",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00046"
     },
     {
       "Acronym": "MIABE",
@@ -3249,7 +3389,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "Minimum information about a bioactive entity",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00047"
     },
     {
       "Acronym": "MI-TAB",
@@ -3272,7 +3413,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Molecular Interaction Tabular",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00048"
     },
     {
       "Acronym": "SLM",
@@ -3295,7 +3437,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "SwissLipids Identifiers",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00049"
     },
     {
       "Acronym": "IUPAC-InChI",
@@ -3318,7 +3461,8 @@
       "Sharing": "All of the above",
       "Standard Name": "InChI Isotopologue and Isotopomer Extension Specifications",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00050"
     },
     {
       "Acronym": "OORF-MRF",
@@ -3341,7 +3485,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "OECD Omics Reporting Framework for Metabolomics in Regulatory Toxicology",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00051"
     },
     {
       "Acronym": "imzML",
@@ -3364,7 +3509,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Imaging Mass Spectrometry Markup Language",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00052"
     }
   ],
   "proteomics": [
@@ -3390,7 +3536,8 @@
       "Sharing": "All of the above",
       "Standard Name": "HUPO PSI Mass Spectrometry Controlled Vocabulary",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00001"
     },
     {
       "Acronym": "mzML",
@@ -3414,7 +3561,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "mzML",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00002"
     },
     {
       "Acronym": "mzMLb ",
@@ -3438,7 +3586,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "mzMLb",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00003"
     },
     {
       "Acronym": "mzTab",
@@ -3462,7 +3611,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "mzTab",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00004"
     },
     {
       "Acronym": "mzIdentML",
@@ -3486,7 +3636,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "mzIdentML",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00005"
     },
     {
       "Acronym": "PEFF",
@@ -3510,7 +3661,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "PSI Extended Fasta Format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00006"
     },
     {
       "Acronym": "USI",
@@ -3534,7 +3686,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Universal Spectrum Identifier",
       "Standard Type": "Identifier Schema",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00007"
     },
     {
       "Acronym": "mzSpecLib",
@@ -3558,7 +3711,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "PSI Spectral Library Format",
       "Standard Type": "Model/Format",
-      "Status": "In Development"
+      "Status": "In Development",
+      "identifier": "undefined:00008"
     },
     {
       "Acronym": "SDRF",
@@ -3582,7 +3736,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Sample to Data Relationship Format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00009"
     },
     {
       "Acronym": "mzQC",
@@ -3606,7 +3761,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Reporting and exchange format for mass spectrometry quality control data",
       "Standard Type": "Model/Format",
-      "Status": "In Development"
+      "Status": "In Development",
+      "identifier": "undefined:00010"
     },
     {
       "Acronym": "ProForma 2.0",
@@ -3630,7 +3786,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Proteoform and Peptidoform Notation Format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00011"
     },
     {
       "Acronym": "mzPAF",
@@ -3654,7 +3811,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Peak Annotation Format",
       "Standard Type": "Model/Format",
-      "Status": "In Development"
+      "Status": "In Development",
+      "identifier": "undefined:00012"
     },
     {
       "Acronym": "MIAPE",
@@ -3678,7 +3836,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "The minimum information about a proteomics experiment",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00013"
     },
     {
       "Acronym": "MIAPE-MS",
@@ -3702,7 +3861,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "Guidelines for reporting the use of mass spectrometry in proteomics",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00014"
     },
     {
       "Acronym": "MIASSPE",
@@ -3726,7 +3886,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "Minimum Information About Sample Preparation for a Phosphoproteomics Experiment",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00015"
     },
     {
       "Acronym": "MIAPE-Quant",
@@ -3750,7 +3911,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "Guidelines for reporting quantitative mass spectrometry based experiments in proteomics",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00016"
     },
     {
       "Acronym": "MIAPE-MSI",
@@ -3774,7 +3936,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "Guidelines for reporting the use of mass spectrometry informatics in proteomics",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00017"
     },
     {
       "Acronym": "MIABE",
@@ -3798,7 +3961,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "The Minimum Information About a Bioactive Entity",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00018"
     },
     {
       "Acronym": "MIAPE-GI",
@@ -3822,7 +3986,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "MIAPE: Gel Informatics",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00019"
     },
     {
       "Acronym": "MOD",
@@ -3846,7 +4011,8 @@
       "Sharing": "All of the above",
       "Standard Name": "PSI-MOD Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00020"
     },
     {
       "Acronym": "IM-MS/DIA-mzML",
@@ -3870,7 +4036,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Proposed mzML best practices for encoding IM-MS and Data Independent Acquisition (DIA) data in mzML",
       "Standard Type": "Reporting Guideline",
-      "Status": "In Development"
+      "Status": "In Development",
+      "identifier": "undefined:00021"
     },
     {
       "Acronym": "proBAM",
@@ -3894,7 +4061,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Proteomics BAM file format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00022"
     },
     {
       "Acronym": "MIADE",
@@ -3918,7 +4086,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "Minimum information guidelines for experiments structurally characterizing intrinsically disordered protein regions",
       "Standard Type": "Reporting Guideline",
-      "Status": "In Development"
+      "Status": "In Development",
+      "identifier": "undefined:00023"
     },
     {
       "Acronym": null,
@@ -3942,7 +4111,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "PRIDE Archive accepted file formats",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00024"
     },
     {
       "Acronym": "MGF",
@@ -3966,7 +4136,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Mascot Generic Format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00025"
     },
     {
       "Acronym": "FASTA",
@@ -3990,7 +4161,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "FASTA Sequence Format",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00026"
     },
     {
       "Acronym": null,
@@ -4014,7 +4186,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Proprietary MS formats (vendor specific)",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00027"
     },
     {
       "Acronym": "RAW",
@@ -4038,7 +4211,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Thermo Fisher Instrument output .RAW file format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00028"
     },
     {
       "Acronym": "MIAPAR",
@@ -4062,7 +4236,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "Minimum information about a protein affinity reagent",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00029"
     },
     {
       "Acronym": "proBED",
@@ -4086,7 +4261,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "proteomics Browser Extensible Data file",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00030"
     },
     {
       "Acronym": "ProXI",
@@ -4110,7 +4286,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "PROteomics eXpression Interface",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "In Development"
+      "Status": "In Development",
+      "identifier": "undefined:00031"
     },
     {
       "Acronym": "TraML",
@@ -4134,7 +4311,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Transition Markup Language",
       "Standard Type": "Model/Format",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00032"
     },
     {
       "Acronym": "HPP 3.0",
@@ -4158,7 +4336,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "HPP Data Interpretation Guidelines version 3.0",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00033"
     },
     {
       "Acronym": "HPG",
@@ -4182,7 +4361,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "HUPO Minimum Information Publication Guidelines v.1.0",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00034"
     },
     {
       "Acronym": "UniProt ID",
@@ -4206,7 +4386,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "UniProt Identifiers",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00035"
     },
     {
       "Acronym": "PRIDE-XML",
@@ -4230,7 +4411,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "PRIDE XML Format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00036"
     },
     {
       "Acronym": "PXD ID",
@@ -4254,7 +4436,8 @@
       "Sharing": "All of the above",
       "Standard Name": "PRIDE/ProteomeXchange Accession number",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00037"
     },
     {
       "Acronym": "MIAPE-GE",
@@ -4278,7 +4461,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "Guidelines for reporting the use of gel electrophoresis in proteomics",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00038"
     },
     {
       "Acronym": "PR/PRO",
@@ -4302,7 +4486,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Protein Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00039"
     },
     {
       "Acronym": "PSI-MI CV",
@@ -4326,7 +4511,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Molecular Interactions Controlled Vocabulary",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00040"
     },
     {
       "Acronym": "MIAPE-CC",
@@ -4350,7 +4536,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "MIAPE Column Chromatography",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00041"
     },
     {
       "Acronym": "MIAPE-CE",
@@ -4374,7 +4561,8 @@
       "Sharing": "Article (human-readable)",
       "Standard Name": "MIAPE Capillary Electrophoresis",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00042"
     },
     {
       "Acronym": "imzML",
@@ -4398,7 +4586,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Imaging Mass Spectrometry Markup Language",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00043"
     },
     {
       "Acronym": "MassIVE.Quant",
@@ -4422,7 +4611,8 @@
       "Sharing": null,
       "Standard Name": "MassIVE Metadata, Quantification, and Statistical Analysis of Quantified Analytes Metadata requirements",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00044"
     }
   ],
   "universal": [
@@ -4446,7 +4636,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Date and time format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00001"
     },
     {
       "Acronym": "DOI",
@@ -4468,7 +4659,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Digital Object Identifier",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00002"
     },
     {
       "Acronym": "IGSN",
@@ -4490,7 +4682,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "International Generic Sample Number",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00003"
     },
     {
       "Acronym": "ISA-TAB",
@@ -4512,7 +4705,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "ISA Metadata Framework",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00004"
     },
     {
       "Acronym": "LinkML",
@@ -4534,7 +4728,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Linked Data Modeling Language",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00005"
     },
     {
       "Acronym": "RO-Crate",
@@ -4556,7 +4751,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Research Object Crate",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00006"
     },
     {
       "Acronym": "ORCID",
@@ -4578,7 +4774,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Open Researcher and Contributor IDentifier",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00007"
     },
     {
       "Acronym": "ISO 20691",
@@ -4600,7 +4797,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Requirements for data formatting and description in the life sciences",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00008"
     },
     {
       "Acronym": "PIDINST v.1.0",
@@ -4622,7 +4820,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Metadata Schema for the Persistent Identification of Instruments (1.0)",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00009"
     },
     {
       "Acronym": "RDaF 2.0",
@@ -4644,7 +4843,8 @@
       "Sharing": "All of the above",
       "Standard Name": "NIST Research Data Framework (RDaF) (Version 2.0)",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00010"
     },
     {
       "Acronym": null,
@@ -4666,7 +4866,8 @@
       "Sharing": "All of the above",
       "Standard Name": "OBO Foundary Ontology Collection",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00011"
     },
     {
       "Acronym": null,
@@ -4688,7 +4889,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Identifiers.org namespace",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00012"
     },
     {
       "Acronym": "ROR",
@@ -4710,7 +4912,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Research Organization Registry",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00013"
     },
     {
       "Acronym": "CURIE",
@@ -4732,7 +4935,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Compact URI",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00014"
     },
     {
       "Acronym": "RRID",
@@ -4754,7 +4958,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Research Resource Identifier",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00015"
     },
     {
       "Acronym": "hdl",
@@ -4776,7 +4981,8 @@
       "Sharing": "All of the above",
       "Standard Name": "handle identifier",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00016"
     },
     {
       "Acronym": "CRediT",
@@ -4798,7 +5004,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Contributor Roles Taxonomy",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00017"
     },
     {
       "Acronym": "URI",
@@ -4820,7 +5027,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Uniform Resource Identifier",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00018"
     },
     {
       "Acronym": "ISO/TS 22943:2022",
@@ -4842,7 +5050,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Principles of identification",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00019"
     },
     {
       "Acronym": "PIDs",
@@ -4864,7 +5073,8 @@
       "Sharing": "All of the above",
       "Standard Name": "Persistent Identifiers",
       "Standard Type": "Identifier Schema",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00020"
     },
     {
       "Acronym": "JSON",
@@ -4886,7 +5096,8 @@
       "Sharing": "All of the above",
       "Standard Name": "JavaScript Object Notation",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00021"
     },
     {
       "Acronym": "JSON-LD",
@@ -4908,7 +5119,8 @@
       "Sharing": "All of the above",
       "Standard Name": "JavaScript Object Notation for Linked Data",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00022"
     },
     {
       "Acronym": null,
@@ -4930,7 +5142,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Bioschemas",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00023"
     },
     {
       "Acronym": "MONDO",
@@ -4952,7 +5165,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Mondo Disease Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00024"
     },
     {
       "Acronym": "NCBITAXON",
@@ -4974,7 +5188,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "NCBI Taxonomy",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00025"
     },
     {
       "Acronym": "CL",
@@ -4996,7 +5211,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Cell Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00026"
     },
     {
       "Acronym": "BTO",
@@ -5018,7 +5234,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "BRENDA tissue / enzyme source",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00027"
     },
     {
       "Acronym": "GO",
@@ -5040,7 +5257,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Gene Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00028"
     },
     {
       "Acronym": "OBI",
@@ -5062,7 +5280,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Ontology for Biomedical Investigations",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00029"
     },
     {
       "Acronym": "EDAM",
@@ -5084,7 +5303,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Ontology of bioscientific data analysis and data management",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00030"
     },
     {
       "Acronym": "HP",
@@ -5106,7 +5326,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Human Phenotype Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00031"
     },
     {
       "Acronym": "SWO",
@@ -5128,7 +5349,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Software ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00032"
     },
     {
       "Acronym": "STATO",
@@ -5150,7 +5372,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "The Statistical Methods Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00033"
     },
     {
       "Acronym": "BFO",
@@ -5172,7 +5395,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Basic Formal Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00034"
     },
     {
       "Acronym": "EFO",
@@ -5194,7 +5418,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Environmental Factor Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00035"
     },
     {
       "Acronym": "UO",
@@ -5216,7 +5441,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Units of Measure Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00036"
     },
     {
       "Acronym": "OWL",
@@ -5238,7 +5464,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Web ontology language",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00037"
     },
     {
       "Acronym": "OBO",
@@ -5260,7 +5487,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "OBO file format",
       "Standard Type": "Model/Format",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00038"
     },
     {
       "Acronym": "PATO",
@@ -5282,7 +5510,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Phenotype And Trait Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00039"
     },
     {
       "Acronym": "UBERON",
@@ -5304,7 +5533,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Uber-anatomy ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00040"
     },
     {
       "Acronym": "OMP",
@@ -5326,7 +5556,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Ontology of Microbial Phenotypes",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00041"
     },
     {
       "Acronym": "RO",
@@ -5348,7 +5579,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "OBO Relations Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00042"
     },
     {
       "Acronym": "CARE",
@@ -5370,7 +5602,8 @@
       "Sharing": "All of the above",
       "Standard Name": "The CARE Principles for Indigenous Data Governance",
       "Standard Type": "Other (Community-Driven)",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00043"
     },
     {
       "Acronym": "FAIR",
@@ -5392,7 +5625,8 @@
       "Sharing": "All of the above",
       "Standard Name": "The FAIR Guiding Principles for scientific data management and stewardship",
       "Standard Type": "Other (Community-Driven)",
-      "Status": "Established"
+      "Status": "Established",
+      "identifier": "undefined:00044"
     },
     {
       "Acronym": "UUID/GUID",
@@ -5414,7 +5648,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Universally Unique Identifier/Globally Unique Identifier",
       "Standard Type": "Multi-Standard Applicable",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00045"
     },
     {
       "Acronym": null,
@@ -5436,7 +5671,8 @@
       "Sharing": "All of the above",
       "Standard Name": "FORCE11 Data Citation Principles",
       "Standard Type": "Reporting Guideline",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00046"
     },
     {
       "Acronym": null,
@@ -5458,7 +5694,8 @@
       "Sharing": "All of the above",
       "Standard Name": "NCBO BioPortal",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00047"
     },
     {
       "Acronym": null,
@@ -5480,7 +5717,8 @@
       "Sharing": "All of the above",
       "Standard Name": "SIFR BioPortal",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00048"
     },
     {
       "Acronym": null,
@@ -5502,7 +5740,8 @@
       "Sharing": "All of the above",
       "Standard Name": "AgroPortal",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00049"
     },
     {
       "Acronym": null,
@@ -5524,7 +5763,8 @@
       "Sharing": "All of the above",
       "Standard Name": "EcoPortal",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00050"
     },
     {
       "Acronym": null,
@@ -5546,7 +5786,8 @@
       "Sharing": "All of the above",
       "Standard Name": "BiodivPortal",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00051"
     },
     {
       "Acronym": null,
@@ -5568,7 +5809,8 @@
       "Sharing": "All of the above",
       "Standard Name": "EarthPortal",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00052"
     },
     {
       "Acronym": null,
@@ -5590,7 +5832,8 @@
       "Sharing": "All of the above",
       "Standard Name": "MedPortal",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00053"
     },
     {
       "Acronym": null,
@@ -5612,7 +5855,8 @@
       "Sharing": "All of the above",
       "Standard Name": "OntoBee",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00054"
     },
     {
       "Acronym": "PO",
@@ -5634,7 +5878,8 @@
       "Sharing": "Knowledgebase (machine-readable)",
       "Standard Name": "Plant Ontology",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00055"
     },
     {
       "Acronym": "DWC",
@@ -5656,7 +5901,8 @@
       "Sharing": "Repository (machine-readable)",
       "Standard Name": "Darwin Core List of Terms",
       "Standard Type": "Terminology artefact",
-      "Status": "Established/Maintained"
+      "Status": "Established/Maintained",
+      "identifier": "undefined:00056"
     }
   ]
 }
