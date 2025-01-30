@@ -57,6 +57,12 @@ function initialiseDataIndex(data) {
 	return data
 }
 
+function replaceKeyInObjectArray(data, replaceMap = REPLACEMAP) {
+	// Remap the keys from the GitHub template to those of the database
+	// https://stackoverflow.com/a/27806458
+	return data.map(o => Object.keys(o).map((key) => ({ [replaceMap[key] || key] : o[key] })).reduce((data, b) => Object.assign({}, data, b)))
+}
+
 function getFormalIdentifier(num, term = standard, length = LEADINGZEROS) {
 	// Generate an appropriately-formatted identifier with leading zeros
 	// ref: https://javascripts.com/pad-leading-zeros-in-javascript/
@@ -87,14 +93,7 @@ function checkIdentifier(title = title, submission = submission, data = data, te
   return data
 }
 
-// Remap the keys from the GitHub template to those of the database
-// https://stackoverflow.com/a/27806458
-let replaceKeyInObjectArray = (a, r) => a.map(o => 
-    Object.keys(o).map((key) => ({ [r[key] || key] : o[key] })
-).reduce((a, b) => Object.assign({}, a, b)))
-replaceKeyInObjectArray(submission, REPLACEMAP)
-// data = initialiseDataIndex(data)
-
+submission = replaceKeyInObjectArray(submission, REPLACEMAP)
 data = checkIdentifier(title, submission, data, standard, contributor)
 fs.writeFileSync('./src/data/database.json', JSON.stringify(data, null, '  '));
 
