@@ -28,3 +28,4 @@ Now give it a try, and [order some :pizza:](https://github.com/whythawk/momsi-te
 1. [@turukawa](https://github.com/turukawa) orders 45 Large Extra giraffe with vinegar burger with Pineapple
 1. [@turukawa](https://github.com/turukawa) orders 345 Large Chicken Tikka burger with Mushroom
 1. [@turukawa](https://github.com/turukawa) orders 198 Large Double waffle with cheese burger with Pineapple
+1. [@turukawa](https://github.com/turukawa) orders 123 Small Veg Tikka burger with Green Pepper
