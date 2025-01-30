@@ -109,7 +109,7 @@ function rebuildVisualisationAggregations(data, aggregation = STANDARDS_AGGREGAT
 					children: [],
 					count: 0
 				}
-				for (const [k, v] of Object.entries(getStandardCounts(classTerm, subclassTerm, filteredSubClass))) {
+				for (const [k, v] of Object.entries(getStandardCounts(classTerm, subClassTerm, filteredSubClass))) {
 					subClassChild.count += v
 					subClassChild.children.push({
 						name: k,
