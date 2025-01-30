@@ -8,8 +8,8 @@ let data = JSON.parse(fs.readFileSync('./src/data/data.json', 'utf-8'))
 const leadingZeros = 5
 const terms = ["burgers", "pizzas"]
 const prefix = {
-	"burgers": "ORDER_B:",
-	"pizzas": "ORDER_P:"
+	"burgers": "ORDER_B",
+	"pizzas": "ORDER_P"
 }
 
 function initialiseDataIndex(data) {
@@ -36,9 +36,9 @@ function checkIdentifier(title = title, submission = submission, data = data, te
   // If the title refers to an existing Standard, then update that entirely
   // Else generate a new identifier and push that to the database
   if (title.startsWith(`[${prefix[term]}:`)) {
-	  submission["identifier"] = title.slice(1,13)
+	  submission["identifier"] = title.slice(1,14)
 	  // https://stackoverflow.com/a/39529049
-	  const indexOfTerm = data[standard].findIndex(item => iterm.identifier === submission.identifier)
+	  const indexOfTerm = data[standard].findIndex(item => item.identifier === submission.identifier)
 	  if (indexOfTerm) {
 		  submission["identifier"] = identifier
 		  data[standard][indexOfTerm] = submission

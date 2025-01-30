@@ -8,7 +8,7 @@
       "i_acknowledge_that_submitting_this_issue_does_not_claim_a_real_burger_order": [
         "Confirm"
       ],
-      "identifier": "ORDER_B::00001"
+      "identifier": "ORDER_B:00001"
     },
     {
       "flavour": "Extra giraffe with vinegar",
@@ -18,7 +18,7 @@
       "i_acknowledge_that_submitting_this_issue_does_not_claim_a_real_burger_order": [
         "Confirm"
       ],
-      "identifier": "ORDER_B::00002"
+      "identifier": "ORDER_B:00002"
     },
     {
       "flavour": "Extra giraffe with vinegar",
@@ -28,7 +28,7 @@
       "i_acknowledge_that_submitting_this_issue_does_not_claim_a_real_burger_order": [
         "Confirm"
       ],
-      "identifier": "ORDER_B::00003"
+      "identifier": "ORDER_B:00003"
     }
   ],
   "pizzas": [
@@ -40,7 +40,7 @@
       "i_acknowledge_that_submitting_this_issue_does_not_claim_a_real_pizza_order": [
         "Confirm"
       ],
-      "identifier": "ORDER_P::00001"
+      "identifier": "ORDER_P:00001"
     },
     {
       "flavour": "Chicken and Mushroom",
@@ -50,7 +50,7 @@
       "i_acknowledge_that_submitting_this_issue_does_not_claim_a_real_pizza_order": [
         "Confirm"
       ],
-      "identifier": "ORDER_P::00002"
+      "identifier": "ORDER_P:00002"
     },
     {
       "flavour": "Chicken and Mushroom",
@@ -60,7 +60,7 @@
       "i_acknowledge_that_submitting_this_issue_does_not_claim_a_real_pizza_order": [
         "Confirm"
       ],
-      "identifier": "ORDER_P::00003"
+      "identifier": "ORDER_P:00003"
     },
     {
       "flavour": "Veg Tikka",
@@ -70,7 +70,7 @@
       "i_acknowledge_that_submitting_this_issue_does_not_claim_a_real_pizza_order": [
         "Confirm"
       ],
-      "identifier": "ORDER_P::00004"
+      "identifier": "ORDER_P:00004"
     }
   ]
 }
