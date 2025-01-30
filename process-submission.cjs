@@ -105,9 +105,9 @@ const STANDARDS_AGGREGATION = {
     "count": 0
 }
 
-function getStandardCounts(classTerm, subclassTerm, data) {
+function getStandardCounts(subclassTerm, data) {
 	let counts = {}
-	const filteredTerms = data.filter((item) => item["Domain Class/Subclass"] === classTerm && item["Standard Type"] === subclassTerm)
+	const filteredTerms = data.filter((item) => item["Standard Type"] === subclassTerm)
 	for (const term of filteredTerms.map(item => item["Standard Name"])) {
 		if (counts.hasOwnProperty(term)) counts[term] += 1
 		else counts[term] = 1
@@ -131,14 +131,14 @@ function rebuildVisualisationAggregations(data, aggregation = STANDARDS_AGGREGAT
 				count: 0
 			}
 			const filteredSubClass = data[standard.toLowerCase()].filter((item) => item["Domain Class/Subclass"] === classTerm)
-			const subClassTerms = filteredSubClass.map(item => item["Domain Class/Subclass"])
+			const subClassTerms = filteredSubClass.map(item => item["Standard Type"])
 			for (const subClassTerm of [...new Set(subClassTerms)]) {
 				const subClassChild = {
 					name: subClassTerm,
 					children: [],
 					count: 0
 				}
-				for (const [k, v] of Object.entries(getStandardCounts(classTerm, subClassTerm, filteredSubClass))) {
+				for (const [k, v] of Object.entries(getStandardCounts(subClassTerm, filteredSubClass))) {
 					subClassChild.count += v
 					subClassChild.children.push({
 						name: k,
