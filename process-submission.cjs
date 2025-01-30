@@ -83,7 +83,7 @@ function checkIdentifier(title = title, submission = submission, data = data, te
 	  submission["Identifier"] = title.slice(1,14)
 	  // https://stackoverflow.com/a/39529049
 	  const indexOfTerm = data[term].findIndex(item => item.Identifier === submission.Identifier)
-	  if (indexOfTerm) {
+	  if (indexOfTerm !== -1) {
 		  data[term][indexOfTerm] = submission
 		  return data
 	  }
