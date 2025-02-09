@@ -2,15 +2,25 @@
 theme: [cotton, wide]
 title: Example circle packing
 toc: false
+style: style.css
 ---
 
-# Circle packing 🚀
-
-<!-- Load and transform the data -->
-
 ```js
-const data = FileAttachment("data/vizibase.json").json();
+const data = FileAttachment("data/circle-packing-chart.json").json();
 ```
+
+<header class="header">
+  <div class="logos">
+	<div class="logo-image">
+		<img height="60px" width="60px" alt="MOMSI WG Logo" src="/images/MOMSI-WG-LOGO.svg">
+	</div>
+	<div class="logo-text">
+		<h1>MOMSI WG Landscape Review Dashboard</h1>
+	</div>
+  </div>
+</header>
+
+---
 
 <!-- Cards with big numbers -->
 
@@ -43,7 +53,7 @@ const height = width;
 // Create the color scale.
 const color = d3.scaleLinear()
   .domain([0, 5])
-  .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
+  .range(["#c0d9ed", "#08306b"])
   .interpolate(d3.interpolateHcl);
 
 // Compute the layout.
@@ -75,7 +85,8 @@ const node = svg.append("g")
 
 // Append the text labels.
 const label = svg.append("g")
-  .style("font", "10px sans-serif")
+  .style("font", "14px sans-serif")
+  .style("font-weight", "bold")
   .attr("pointer-events", "none")
   .attr("text-anchor", "middle")
 .selectAll("text")
@@ -121,5 +132,8 @@ label
 	.on("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
 }
 
-display(svg.node());
 ```
+
+<div class="card card-sharp">
+	${svg.node()}
+</div>

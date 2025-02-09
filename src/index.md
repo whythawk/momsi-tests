@@ -1,15 +1,26 @@
 ---
 toc: false
 theme: [cotton]
+style: style.css
 ---
 
 ```js
-const typdata = FileAttachment("data/typebase.json").json();
+const bardata = FileAttachment("data/standards-bar-chart.json").json();
 ```
 
-<div class="hero">
-  <h1>MOMSI Dashboard</h1>
-  <h2>Welcome to your new app!</h2>
+<header class="header">
+  <div class="logos">
+	<div class="logo-image">
+		<img height="60px" width="60px" alt="MOMSI WG Logo" src="/images/MOMSI-WG-LOGO.svg">
+	</div>
+	<div class="logo-text">
+		<h1>MOMSI WG Landscape Review Dashboard</h1>
+	</div>
+  </div>
+</header>
+
+<div class="description">
+	<p>Welcome one and all</p>
 </div>
 
 ---
@@ -22,7 +33,7 @@ const typdata = FileAttachment("data/typebase.json").json();
       y: {tickFormat: "s", grid: true, label: "Count"},
 	  color: {legend: true},
       marks: [
-		Plot.barY(typdata, {
+		Plot.barY(bardata, {
 		  x: "standard",
 		  y: "count",
 		  fill: "standard",
@@ -40,10 +51,10 @@ const typdata = FileAttachment("data/typebase.json").json();
 import {Mutable} from "observablehq:stdlib";
 const data = await FileAttachment("data/database.json").json()
 const dataColumns = {
-	"genomics": ["Standard Name", "Acronym", "Standard Type", "Status", "Country", "Domain Class/Subclass", "Application Technology", "Plan", "Collect", "Process", "Analysis", "Preservation", "Sharing", "Reuse", "Meets Criteria", "Active Affiliation(s)", "Homepage", "Reference Article Citation (DOI)", "Reference Source Code (DOI or URL)", "FAIRsharing Record (DOI or URL)", "Identifier"],
-	"proteomics": ["Standard Name", "Acronym", "Standard Type", "Status", "Country", "Domain Class/Subclass", "Application Technology", "Description", "Plan", "Collect", "Process", "Analysis", "Preservation", "Sharing", "Reuse", "Meets Criteria", "Active Affiliation(s)", "Homepage", "Reference Article Citation (DOI)", "Reference Source Code (DOI or URL)", "FAIRsharing Record (DOI or URL)", "Identifier"],
-	"metabolomics": ["Standard Name", "Acronym", "Standard Type", "Status", "Country", "Domain Class/Subclass", "Application Technology", "Plan", "Collect", "Process", "Analysis", "Preservation", "Sharing", "Reuse", "Meets Criteria", "Active Affiliation(s)", "Homepage", "Reference Article Citation (DOI)", "Reference Source Code (URL)", "FAIRsharing Record (DOI or URL)", "Identifier"],
-	"universal": ["Standard Name", "Acronym", "Standard Type", "Status", "Country", "Domain Class/Subclass", "Plan", "Collect", "Process", "Analysis", "Preservation", "Sharing", "Reuse", "Meets Criteria", "Active Affiliation(s)", "Homepage", "Reference Article Citation (DOI)", "Reference Source Code (DOI or URL)", "FAIRsharing Record (DOI or URL)", "Identifier"]
+	"genomics": ["Standard Type", "Domain Class/Subclass", "Acronym", "Standard Name", "Status", "Country", "Application Technology", "Plan", "Collect", "Process", "Analysis", "Preservation", "Sharing", "Reuse", "Active Affiliation(s)", "FAIRsharing Record (DOI or URL)", "Identifier"],
+	"proteomics": ["Standard Type", "Domain Class/Subclass", "Acronym", "Standard Name", "Status", "Country", "Application Technology", "Plan", "Collect", "Process", "Analysis", "Preservation", "Sharing", "Reuse", "Active Affiliation(s)", "FAIRsharing Record (DOI or URL)", "Identifier"],
+	"metabolomics": ["Standard Type", "Domain Class/Subclass", "Acronym", "Standard Name", "Status", "Country", "Application Technology", "Plan", "Collect", "Process", "Analysis", "Preservation", "Sharing", "Reuse", "Active Affiliation(s)", "FAIRsharing Record (DOI or URL)", "Identifier"],
+	"universal": ["Standard Type", "Domain Class/Subclass", "Acronym", "Standard Name", "Status", "Country", "Application Technology", "Plan", "Collect", "Process", "Analysis", "Preservation", "Sharing", "Reuse", "Active Affiliation(s)", "FAIRsharing Record (DOI or URL)", "Identifier"]
 }
 let standardChoice = Mutable("genomics")
 let columnChoice = Mutable(dataColumns["genomics"])
@@ -97,45 +108,3 @@ const searchU = Generators.input(searchUInput);
 	 : "" }
 </div>
 
-<style>
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: var(--sans-serif);
-  margin: 1rem 0 1rem;
-  text-wrap: balance;
-  text-align: center;
-}
-
-.hero h1 {
-  margin: 0.5rem 0;
-  padding: 0.5rem 0;
-  max-width: none;
-  font-size: 14vw;
-  font-weight: 900;
-  line-height: 1;
-  background: linear-gradient(30deg, var(--theme-foreground-focus), currentColor);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.hero h2 {
-  margin: 0;
-  max-width: 34em;
-  font-size: 20px;
-  font-style: initial;
-  font-weight: 500;
-  line-height: 1.5;
-  color: var(--theme-foreground-muted);
-}
-
-@media (min-width: 640px) {
-  .hero h1 {
-    font-size: 50px;
-  }
-}
-
-</style>

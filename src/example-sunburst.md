@@ -2,36 +2,25 @@
 theme: [cotton, wide]
 title: Example sunburst
 toc: false
+style: style.css
 ---
 
-# Sunburst 🚀
-
-<!-- Load and transform the data -->
-
 ```js
-const data = FileAttachment("data/vizibase.json").json();
+const data = FileAttachment("data/sunburst-chart.json").json();
 ```
 
-<!-- Cards with big numbers -->
+<header class="header">
+  <div class="logos">
+	<div class="logo-image">
+		<img height="60px" width="60px" alt="MOMSI WG Logo" src="/images/MOMSI-WG-LOGO.svg">
+	</div>
+	<div class="logo-text">
+		<h1>MOMSI WG Landscape Review Dashboard</h1>
+	</div>
+  </div>
+</header>
 
-<div class="grid grid-cols-4">
-  <div class="card">
-    <h2>Genomics</h2>
-    <span class="big">${data.children.find((s) => s.name === "Genomics").count}</span>
-  </div>
-  <div class="card">
-    <h2>Proteomics</h2>
-    <span class="big">${data.children.find((s) => s.name === "Proteomics").count}</span>
-  </div>
-  <div class="card">
-    <h2>Metabolomics</h2>
-    <span class="big">${data.children.find((s) => s.name === "Metabolomics").count}</span>
-  </div>
-  <div class="card">
-    <h2>Universal</h2>
-    <span class="big">${data.children.find((s) => s.name === "Universal").count}</span>
-  </div>
-</div>
+---
 
 <!-- Plot of launch vehicles -->
 
@@ -88,6 +77,8 @@ path.append("title")
   .text(d => `${d.ancestors().map(d => d.data.name).reverse().join("/")}\n${format(d.count)}`);
 
 const label = svg.append("g")
+  .style("font", "14px sans-serif")
+  .style("font-weight", "bold")
   .attr("pointer-events", "none")
   .attr("text-anchor", "middle")
   .style("user-select", "none")
@@ -156,5 +147,8 @@ const y = (d.y0 + d.y1) / 2 * radius;
 return `rotate(${x - 90}) translate(${y},0) rotate(${x < 180 ? 0 : 180})`;
 }
 
-display(svg.node());
 ```
+
+<div class="card card-sharp">
+	${svg.node()}
+</div>

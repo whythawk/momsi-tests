@@ -2,36 +2,25 @@
 theme: [cotton, wide]
 title: Example cluster
 toc: false
+style: style.css
 ---
 
-# Cluster 🚀
-
-<!-- Load and transform the data -->
-
 ```js
-const data = FileAttachment("data/vizibase.json").json();
+const data = FileAttachment("data/cluster-chart.json").json();
 ```
 
-<!-- Cards with big numbers -->
+<header class="header">
+  <div class="logos">
+	<div class="logo-image">
+		<img height="60px" width="60px" alt="MOMSI WG Logo" src="/images/MOMSI-WG-LOGO.svg">
+	</div>
+	<div class="logo-text">
+		<h1>MOMSI WG Landscape Review Dashboard</h1>
+	</div>
+  </div>
+</header>
 
-<div class="grid grid-cols-4">
-  <div class="card">
-    <h2>Genomics</h2>
-    <span class="big">${data.children.find((s) => s.name === "Genomics").count}</span>
-  </div>
-  <div class="card">
-    <h2>Proteomics</h2>
-    <span class="big">${data.children.find((s) => s.name === "Proteomics").count}</span>
-  </div>
-  <div class="card">
-    <h2>Metabolomics</h2>
-    <span class="big">${data.children.find((s) => s.name === "Metabolomics").count}</span>
-  </div>
-  <div class="card">
-    <h2>Universal</h2>
-    <span class="big">${data.children.find((s) => s.name === "Universal").count}</span>
-  </div>
-</div>
+---
 
 <!-- Plot of launch vehicles -->
 

@@ -8,12 +8,10 @@ export default {
   // lets you organize them into sections and have unlisted pages.
   pages: [
     {
-      name: "Examples",
+      name: "Explore",
       pages: [
         {name: "Cluster", path: "/example-cluster"},
-        {name: "Radial", path: "/exemple-radial"},
         {name: "Sunburst", path: "/example-sunburst"},
-        {name: "Cumulative sunburst", path: "/example-cumulative-sunburst"},
 		{name: "Circle packing", path: "/example-circle"}
       ]
     }
@@ -24,6 +22,9 @@ export default {
 
   // The path to the source root.
   root: "src",
+  // Register a custom stylesheet.
+  style: "/style.css",
+  footer: "<footer class='footer'><div class='footer-logos'><div class='footer-image'><img height='60px' alt='RDA Logo' src='/images/RDA-Logotype.svg'></div><div class='footer-image'><img height='60px' alt='RDATiger-EOSC Logo' src='/images/RDATiger-EOSC.svg'></div><div class='footer-text'><p>This project has received funding from the European Union’s Horizon Europe framework programme under grant agreement No. 101094406. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Executive Agency. Neither the European Union nor the European Research Executive Agency can be held responsible for them.</p></div></div></footer>",
 
   // Some additional configuration options and their defaults:
   // theme: "default", // try "light", "dark", "slate", etc.
