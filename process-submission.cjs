@@ -39,6 +39,8 @@ const REPLACEMAP = {
 	"reference-article-citation-doi": "Reference Article Citation (DOI)",
 	"reference-source-code-doi": "Reference Source Code (DOI or URL)",
 	"fairsharing-record-doi": "FAIRsharing Record (DOI or URL)",
+	"contributor-name": "Contributor Name",
+	"contributor-orcid-id": "Contributor ORCID ID"
 }
 const LEADINGZEROS = 5
 

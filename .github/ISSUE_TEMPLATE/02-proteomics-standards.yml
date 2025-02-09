@@ -236,6 +236,18 @@ body:
       label: FAIRsharing Record (DOI or URL)
       description: Provide a URL or DOI for relevant references?
       placeholder: e.g. https://fairsharing.org/5383
+  - type: input
+    id: contributor-name
+    attributes:
+      label: Contributor Name
+      description: Provide your name for attribution as a contributor
+      placeholder: e.g. Symona Adaro
+  - type: input
+    id: contributor-orcid-id
+    attributes:
+      label: Contributor ORCID ID
+      description: Provide your ORCID ID?
+      placeholder: e.g. 0000-0000-0000-0000
   - type: textarea
     id: comments
     attributes:
