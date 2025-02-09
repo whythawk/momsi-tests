@@ -34,7 +34,7 @@ jobs:
             - uses: actions/checkout@v4
             - uses: actions/setup-node@v4
               with:
-                node-version: '16'
+                node-version: '20'
             - uses: stefanbuck/github-issue-parser@v3
               id: issue-parser
               with:
@@ -58,7 +58,7 @@ jobs:
             - uses: actions/checkout@v4
             - uses: actions/setup-node@v4
               with:
-                node-version: '16'
+                node-version: '20'
             - uses: stefanbuck/github-issue-parser@v3
               id: issue-parser
               with:
@@ -82,7 +82,7 @@ jobs:
             - uses: actions/checkout@v4
             - uses: actions/setup-node@v4
               with:
-                node-version: '16'
+                node-version: '20'
             - uses: stefanbuck/github-issue-parser@v3
               id: issue-parser
               with:
@@ -106,7 +106,7 @@ jobs:
             - uses: actions/checkout@v4
             - uses: actions/setup-node@v4
               with:
-                node-version: '16'
+                node-version: '20'
             - uses: stefanbuck/github-issue-parser@v3
               id: issue-parser
               with:
@@ -168,42 +168,10 @@ jobs:
                   git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
                   git config --global user.name "github-actions[bot]" && \
                   git add ./src/data/database.json && \
-                  git add ./src/data/vizibase.json && \
-                  git add ./src/data/typebase.json && \
                   git commit -m 'Update Standards' && \
                   git push
-
-            - name: Install dependencies
-              run: yarn --frozen-lockfile
-
-            - name: Build
-              run: npm run build
-
-            - name: Upload artifact
-              uses: actions/upload-pages-artifact@v3
-              with:
-                path: ./dist
 
             - name: Close Issue
               run: gh issue close --comment "Auto-closing issue" ${{ github.event.issue.number }}
               env:
                 GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    deploy:
-        runs-on: ubuntu-latest
-        permissions:
-            pages: write
-            id-token: write
-        needs: [genomics, proteomics, metabolomics, universal, completion]
-        if: |
-            !failure() 
-            && !cancelled() 
-            && (success('genomics') || success('proteomics') || success('metabolomics') || success('universal'))
-            && success('completion')
-        environment:
-          name: github-pages
-          url: ${{ steps.deployment.outputs.page_url }}
-        steps:
-            - name: Deploy to GitHub Pages
-              id: deployment
-              uses: actions/deploy-pages@v4
