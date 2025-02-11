@@ -50,10 +50,6 @@ h6 {
 	max-width: none;
 	font-size: 14vw;
 	font-weight: 700;
-	background: linear-gradient(30deg, var(--theme-foreground-focus), currentColor);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
 }
 
 .description {

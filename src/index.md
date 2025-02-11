@@ -29,7 +29,8 @@ const bardata = FileAttachment("data/standards-bar-chart.json").json();
     resize((width) => Plot.plot({
       title: "MOMSI WG Landscape Review Live Summary",
       width,
-      x: {axis: null, label: "Standard Type"},
+      x: {label: null, axis: null},
+	  fx: {label: null},
       y: {tickFormat: "s", grid: true, label: "Count"},
 	  color: {legend: true},
       marks: [
