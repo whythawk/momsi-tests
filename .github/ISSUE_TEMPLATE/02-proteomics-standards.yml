@@ -199,7 +199,7 @@ body:
     id: meets-criteria
     attributes:
       label: Meets Criteria
-      description: Standard meets discussed criteria to be selected for the [Omics Standards Collection at FAIRsharing](https://rdmkit.elixir-europe.org/existing_data). 
+      description: Standard meets discussed criteria to be selected for the [MOMSI Standards Collection at FAIRsharing](https://fairsharing.org/5742). 
       options:
         - label: Meets criteria for the Omics Standards Collection at FAIRsharing
   - type: input
