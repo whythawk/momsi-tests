@@ -12,7 +12,8 @@ export default {
       pages: [
         {name: "Cluster", path: "/example-cluster"},
         {name: "Sunburst", path: "/example-sunburst"},
-		{name: "Circle packing", path: "/example-circle"}
+		{name: "Circle packing", path: "/example-circle"},
+		{name: "Icicle", path: "/example-icicle"}
       ]
     }
   ],
