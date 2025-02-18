@@ -26,18 +26,19 @@ const data = FileAttachment("data/cluster-chart.json").json();
 
 ```js
 // Specify the charts’ dimensions. The height is variable, depending on the layout.
-const width = 928;
+const width = 1000;
 const marginTop = 10;
-const marginRight = 10;
+const marginRight = 0;
 const marginBottom = 10;
-const marginLeft = 100;
+const marginLeft = 130;
 
 // Rows are separated by dx pixels, columns by dy pixels. These names can be counter-intuitive
 // (dx is a height, and dy a width). This because the tree must be viewed with the root at the
 // “bottom”, in the data domain. The width of a column is based on the tree’s height.
 const root = d3.hierarchy(data);
-const dx = 10;
+const dx = 20;
 const dy = (width - marginRight - marginLeft) / (1 + root.height);
+console.log(root.height)
 
 // Define the tree layout and the shape for links.
 const tree = d3.tree().nodeSize([dx, dy]);
@@ -106,7 +107,7 @@ nodeEnter.append("text")
 	.attr("dy", "0.31em")
 	.attr("x", d => d._children ? -6 : 6)
 	.attr("text-anchor", d => d._children ? "end" : "start")
-	.style("font", "12px sans-serif")
+	.style("font", "11px sans-serif")
 	.text(d => d.data.name)
 	.attr("stroke-linejoin", "round")
 	.attr("stroke-width", 3)
