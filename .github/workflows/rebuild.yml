@@ -19,6 +19,8 @@ jobs:
             - run: node ./rebuild-dashboard.cjs
             
             - name: Commit changes
+              id: commitchanges
+              continue-on-error: true
               shell: bash
               run: |
                   git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
@@ -58,6 +60,7 @@ jobs:
             pages: write
             id-token: write
         needs: [build]
+        if: always()
         environment:
           name: github-pages
           url: ${{ steps.deployment.outputs.page_url }}
