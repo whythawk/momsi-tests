@@ -58,11 +58,12 @@ jobs:
             pages: write
             id-token: write
         needs: [build]
-        if: ${{ needs.build.result == 'success' }}
+        if: always()
         environment:
           name: github-pages
           url: ${{ steps.deployment.outputs.page_url }}
         steps:
+            - run: echo "Deploying build ${{ needs.build.result }}"
             - name: Deploy to GitHub Pages
               id: deployment
               uses: actions/deploy-pages@v4
