@@ -58,7 +58,10 @@ jobs:
             pages: write
             id-token: write
         needs: [build]
-        if: success('build')
+        if: |
+            !failure() 
+            && !cancelled() 
+            && success('build')
         environment:
           name: github-pages
           url: ${{ steps.deployment.outputs.page_url }}

@@ -168,6 +168,7 @@ jobs:
                   git config --global user.email "github-actions[bot]@users.noreply.github.com" && \
                   git config --global user.name "github-actions[bot]" && \
                   git add ./src/data/database.json && \
+                  git add CONTRIBUTING.md && \
                   git commit -m 'Update Standards' && \
                   git push
 
