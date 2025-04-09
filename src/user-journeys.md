@@ -18,7 +18,7 @@ The [Research Data Management toolkit for Life Sciences (RDMkit)](https://rdmkit
 >  - Mutual global co-chair alignments aimed to enhance data management best practices and stewardship standard-informed decision making improving metadata harmonization for data integration.
 
 
-[![doi: 10.5281/zenodo.11552128](./images/MOMSI_RDMkit_Lifecycle.png)](https://doi.org/10.5281/zenodo.11552128)
+[![doi: 10.5281/zenodo.11552128](./images/MOMSI_RDMkit_Lifecycle.jpg)](https://doi.org/10.5281/zenodo.11552128)
 
 ### Browse Standard Implementations by Lifecycle Stage
 
