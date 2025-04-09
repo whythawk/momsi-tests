@@ -30,9 +30,13 @@
             {
               "name": "undefined",
               "count": 26
+            },
+            {
+              "name": "minSCe",
+              "count": 1
             }
           ],
-          "count": 26
+          "count": 27
         },
         {
           "name": "Multi-Standard Applicable",
@@ -55,7 +59,7 @@
           "count": 6
         }
       ],
-      "count": 93
+      "count": 94
     },
     {
       "name": "Proteomics",
@@ -236,5 +240,5 @@
       "count": 58
     }
   ],
-  "count": 247
+  "count": 248
 }
