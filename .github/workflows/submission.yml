@@ -123,11 +123,10 @@ jobs:
     completion:
         runs-on: ubuntu-latest
         needs: [genomics, proteomics, metabolomics, universal]
-        if: ${{
-              !failure() 
-              && !cancelled() 
-              && (success('genomics') || success('proteomics') || success('metabolomics') || success('universal'))
-            }}
+        if: |
+            !failure() 
+            && !cancelled() 
+            && (needs.genomics.result == 'success' || needs.proteomics.result == 'success' || needs.metabolomics.result == 'success' || needs.universal.result == 'success')
         steps:
             - uses: actions/checkout@v4
             - uses: actions/setup-node@v4
