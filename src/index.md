@@ -19,9 +19,14 @@ const bardata = FileAttachment("data/standards-bar-chart.json").json();
   </div>
 </header>
 
-<div class="description">
-	<p>Welcome one and all</p>
-</div>
+🎉 Welcome to the [Multi-Omics Metadata Standards Integration (MOMSI) Working Group](https://www.rd-alliance.org/groups/multi-omics-metadata-standards-integration-momsi-wg) community-driven Multi-Omics standard landscape review curation workflow and interactive web-based dashboard tool! 
+
+**Note:** This dashboard supports query and discovery of Multi-omics standards listed within our repository as a visualization supporting live curation. This dashboard is not intended for advanced search and filter navigation nor it is our final recommendation resource. 
+
+> <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg> Not sure where to begin?
+> - Visit our [Glossary](./glossary) page to browse curated concept and terminologies linked to filter tags listed at the dashboard and FAIRsharing Collection.
+> - Visit our [User Journeys](./user-journeys) page for themed use-case exploration of standard types, data lifecycle curation concepts, and core Omics subject areas.
+> - Toggle the Omics summary tables below. You can sort by column header and even make direct issue requests from unique identifier links provided. See [CONTRIBUTING](./contributing) for additional guidance.
 
 ---
 

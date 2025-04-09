@@ -8,6 +8,7 @@ let data = JSON.parse(fs.readFileSync('./src/data/database.json', 'utf-8'))
 const standard = String(fs.readFileSync('submitter.txt', 'utf-8')).trim().toLowerCase()
 const title = eventPayload.issue.title.trim()
 const contributor = eventPayload.issue.user.login
+const issueNumber = eventPayload.issue.number
 
 // CONSTANTS
 
@@ -40,6 +41,7 @@ const REPLACEMAP = {
 	"reference-source-code-doi": "Reference Source Code (DOI or URL)",
 	"fairsharing-record-doi": "FAIRsharing Record (DOI or URL)",
 	"contributor-name": "Contributor Name",
+	"credit": "CRediT",
 	"contributor-orcid-id": "Contributor ORCID ID"
 }
 const LEADINGZEROS = 5
@@ -94,6 +96,22 @@ function checkIdentifier(title = title, submission = submission, data = data, te
   return data
 }
 
+function giveCRediT(submission = submission, issueNumber=issueNumber, contributor=null) {
+	// |  Issue   |    Date    |       Name       |      ORCID ID       |                  CRediT                   |  Standard ID  |   Github ID   |
+	// | :------: | :--------: | :--------------: | :-----------------: | :---------------------------------------: | :-----------: | :-----------: |
+	// https://stackoverflow.com/a/4929629
+	const today = new Date();
+	const dd = String(today.getDate()).padStart(2, '0');
+	const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+	const yyyy = today.getFullYear();
+	today = yyyy + '-' + mm + '-' + dd;
+	const CRediT = `| ${issueNumber} | ${today}  | ${submission["Contributor Name"]} | ${submission["Contributor ORCID ID"]} | ${submission["CRediT"]} | ${submission["Identifier"]} | ${contributor} | \n`;
+	return CRediT
+}
+
 submission = replaceKeyInObjectArray(submission, REPLACEMAP)
+const CRediT = giveCRediT(submission, issueNumber, contributor)
+fs.appendFileSync('CONTRIBUTING.md', CRediT);
+
 data = checkIdentifier(title, submission, data, standard, contributor)
 fs.writeFileSync('./src/data/database.json', JSON.stringify(data, null, '  '));

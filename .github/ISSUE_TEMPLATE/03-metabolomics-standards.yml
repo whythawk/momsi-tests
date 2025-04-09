@@ -249,6 +249,28 @@ body:
       label: Contributor ORCID ID
       description: Provide your ORCID ID?
       placeholder: e.g. 0000-0000-0000-0000
+  - type: dropdown
+    id: credit
+    attributes:
+      label: CRediT
+      description: Taxonomy to describe types of contributions, [CRediT](https://credit.niso.org/).
+      multiple: true
+      options:
+        - Conceptualization
+        - Data curation
+        - Formal analysis
+        - Funding acquisition
+        - Investigation
+        - Methodology
+        - Project administration
+        - Resources
+        - Software
+        - Supervision
+        - Validation
+        - Visualization
+        - "Writing - original draft"
+        - "Writing - review & editing"
+        - N/A
   - type: textarea
     id: comments
     attributes:
