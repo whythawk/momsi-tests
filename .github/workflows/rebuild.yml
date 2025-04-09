@@ -62,7 +62,7 @@ jobs:
           name: github-pages
           url: ${{ steps.deployment.outputs.page_url }}
         steps:
+            - run: echo "needs.build.result == ${{ needs.build.result == 'success' }}"
             - name: Deploy to GitHub Pages
-              if: ${{ needs.build.result == 'success' }}
               id: deployment
               uses: actions/deploy-pages@v4
