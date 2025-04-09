@@ -39,4 +39,4 @@ CRediT selections for "Data curation, Writing – original draft" are applied fo
 _The below contributor fields are documented for all merged community contributions._
 
 |  Issue   |    Date    |       Name       |      ORCID ID       |                  CRediT                   |  Standard ID  |   Github ID   |
-| :------: | :--------: | :--------------: | :-----------------: | :---------------------------------------: | :-----------: | :-----------: |
+| :------: | :--------: | :--------------: | :-----------------: | :---------------------------------------: | :-----------: | :-----------: || 29 | 2025-04-09  | Lindsey Anderson | 0000-0002-8741-7823 | Writing - original draft | undefined | lnanderson | 
