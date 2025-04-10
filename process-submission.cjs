@@ -92,8 +92,7 @@ function checkIdentifier(title = title, submission = submission, data = data, te
   }
   // Default, create an identifier and append
   submission["Identifier"] = getFormalIdentifier(data[term].length)
-  data[term].push(submission)
-  return data
+  return submission
 }
 
 function giveCRediT(submission = submission, issueNumber=issueNumber, contributor=null) {
@@ -105,13 +104,16 @@ function giveCRediT(submission = submission, issueNumber=issueNumber, contributo
 	const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 	const yyyy = today.getFullYear();
 	const renew = yyyy + '-' + mm + '-' + dd;
-	const CRediT = `| ${issueNumber} | ${renew}  | ${submission["Contributor Name"]} | ${submission["Contributor ORCID ID"]} | ${submission["CRediT"]} | ${submission["Identifier"]} | ${contributor} | \n`;
+	const CRediT = ` ${issueNumber} | ${renew}  | ${submission["Contributor Name"]} | ${submission["Contributor ORCID ID"]} | ${submission["CRediT"]} | ${submission["Identifier"]} | [@${contributor}](https://github.com/${contributor}) |\n`;
 	return CRediT
 }
 
+// Formalise submission
 submission = replaceKeyInObjectArray(submission, REPLACEMAP)
+submission = checkIdentifier(title, submission, data, standard, contributor)
+// Give CRediT
 const CRediT = giveCRediT(submission, issueNumber, contributor)
 fs.appendFileSync('CONTRIBUTING.md', CRediT);
-
-data = checkIdentifier(title, submission, data, standard, contributor)
+// Update database
+data[standard].push(submission)
 fs.writeFileSync('./src/data/database.json', JSON.stringify(data, null, '  '));

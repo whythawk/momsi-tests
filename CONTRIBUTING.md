@@ -40,4 +40,4 @@ _The below contributor fields are documented for all merged community contributi
 
 |  Issue   |    Date    |       Name       |      ORCID ID       |                  CRediT                   |  Standard ID  |   Github ID   |
 | :------: | :--------: | :--------------: | :-----------------: | :---------------------------------------: | :-----------: | :-----------: |
-| 29 | 2025-04-09  | Lindsey Anderson | 0000-0002-8741-7823 | Writing - original draft | undefined | lnanderson | 
+| 29 | 2025-04-09  | Lindsey Anderson | 0000-0002-8741-7823 | Writing - original draft | undefined | [@lnanderson](https://github.com/lnanderson) |
