@@ -2537,6 +2537,33 @@
       "CRediT": "Writing - original draft",
       "Contributor": "lnanderson",
       "Identifier": "MOMSI_G:00093"
+    },
+    {
+      "Standard Type": "Reporting Guideline",
+      "Status": "Established",
+      "Country": "United Kingdom, United States",
+      "Domain Class/Subclass": "Epigenomics",
+      "Application Technology": "RNA Sequencing",
+      "Standard Name": "Minimum Information about a Single-Cell Experiment",
+      "Acronym": "minSCe",
+      "Plan": "Experimental Design",
+      "Collect": "All of the above",
+      "Process": "Metadata Collection",
+      "Analysis": "Interpretation Analysis",
+      "Preservation": "Metadata Storage",
+      "Sharing": "All of the above",
+      "Reuse": "Conditional based on linked standards",
+      "Meets Criteria": [],
+      "Active Affiliation(s)": "European Bioinformatics Institute (EBI) Gene Expression Group",
+      "Homepage": "https://github.com/ebi-gene-expression-group/sc-metadata-fields",
+      "Reference Article Citation (DOI)": "https://doi.org/10.1038/s41587-020-00744-z",
+      "Reference Source Code (DOI or URL)": "",
+      "FAIRsharing Record (DOI or URL)": "https://doi.org/10.25504/FAIRsharing.77c3d3",
+      "Contributor Name": "Lindsey Anderson",
+      "Contributor ORCID ID": "0000-0002-8741-7823",
+      "CRediT": "Writing - original draft",
+      "Contributor": "lnanderson",
+      "Identifier": "MOMSI_G:00094"
     }
   ],
   "metabolomics": [
