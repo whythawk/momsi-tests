@@ -369,19 +369,19 @@
                   "children": [
                     {
                       "name": "minSCe",
-                      "count": 1
+                      "count": 2
                     }
                   ],
-                  "count": 1
+                  "count": 2
                 }
               ],
-              "count": 1
+              "count": 2
             }
           ],
-          "count": 2
+          "count": 3
         }
       ],
-      "count": 2
+      "count": 3
     },
     {
       "name": "Mass Spectrometry (general)",
@@ -816,5 +816,5 @@
       "count": 2
     }
   ],
-  "count": 242
+  "count": 243
 }
