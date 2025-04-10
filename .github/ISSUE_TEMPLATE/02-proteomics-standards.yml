@@ -254,8 +254,8 @@ body:
       label: CRediT
       description: Taxonomy to describe types of contributions, [CRediT](https://credit.niso.org/).
       options:
-        - "Data curation, Writing - review & editing"
-        - "Data curation, Writing - original draft"
+        - "Data curation; Writing - review & editing"
+        - "Data curation; Writing - original draft"
         - N/A
   - type: textarea
     id: comments

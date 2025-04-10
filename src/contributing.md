@@ -37,15 +37,15 @@ The MOMSI dashboard contribution log captures the minimum required information (
 
 > <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg> CRediT Role Guidance
 > - <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg> **Existing Standards**
-CRediT selections for "Data curation, Writing – review & editing" are applied for updating existing standards currently captured in MOMSI WG landscape review list.
+CRediT selections for "Data curation; Writing – review & editing" are applied for updating existing standards currently captured in MOMSI WG landscape review list.
 > - <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/><path d="M12 8v8"/></svg> **New Standards**
-CRediT selections for "Data curation, Writing – original draft" are applied for adding new standards not previously captured in the landscape review dashboard.
+CRediT selections for "Data curation; Writing – original draft" are applied for adding new standards not previously captured in the landscape review dashboard.
 ---
 ## <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/></svg> Contribution Log
 _The below contributor fields are documented for all merged community contributions._
 
 |  Issue   |    Date    |       Name       |      ORCID ID       |                  CRediT                   |  Standard ID  |   Github ID   |
 | :------: | :--------: | :--------------: | :-----------------: | :---------------------------------------: | :-----------: | :-----------: |
-| Issue #0 | YYYY-MM-DD | Lindsey Anderson | 0000-0002-8741-7823 | Data curation, Writing – review & editing | MOMSI_U:00000 | @lnanderson   |
+| Issue #0 | YYYY-MM-DD | Lindsey Anderson | 0000-0002-8741-7823 | Data curation; Writing – review & editing | MOMSI_U:00000 | @lnanderson   |
 
 
