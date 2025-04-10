@@ -56,7 +56,7 @@ As part of our sustainability workflow and long-term maintenance plan this repos
 
 ####  ✅ Updates
 
-This repository is automatically updated daily using scheduled workflows in GitHub Actions.
+The dashboard is automatically rebuilt on any repository changes using scheduled workflows in GitHub Actions.
 
 ---
 

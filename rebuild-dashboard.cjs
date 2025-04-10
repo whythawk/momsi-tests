@@ -9,7 +9,7 @@ let data = JSON.parse(fs.readFileSync('./src/data/database.json', 'utf-8'))
 const STANDARDS = ["Genomics", "Proteomics", "Metabolomics", "Universal"]
 const LIFECYCLE = ["Plan", "Collect", "Process", "Analysis", "Preservation", "Sharing", "Reuse"]
 const STANDARDTYPES = ["Reporting Guideline", "Terminology artefact", "Model/Format", "Identifier Schema", "Multi-Standard Applicable"]
-const MULTIPLE_PERMITTED = ["Domain Class/Subclass", "Application Technology", "CRediT"]
+const MULTIPLE_PERMITTED = ["Domain Class/Subclass", "Application Technology"]
 
 const STANDARDS_AGGREGATION = {
     "name": "Standards",

@@ -104,7 +104,7 @@ function giveCRediT(submission = submission, issueNumber=issueNumber, contributo
 	const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 	const yyyy = today.getFullYear();
 	const renew = yyyy + '-' + mm + '-' + dd;
-	const CRediT = ` ${issueNumber} | ${renew}  | ${submission["Contributor Name"]} | ${submission["Contributor ORCID ID"]} | ${submission["CRediT"]} | ${submission["Identifier"]} | [@${contributor}](https://github.com/${contributor}) |\n`;
+	const CRediT = `| #${issueNumber} | ${renew}  | ${submission["Contributor Name"]} | \`${submission["Contributor ORCID ID"]}\` | ${submission["CRediT"]} | ${submission["Identifier"]} | [@${contributor}](https://github.com/${contributor}) |\n`;
 	return CRediT
 }
 

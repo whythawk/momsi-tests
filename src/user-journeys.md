@@ -22,13 +22,13 @@ The [Research Data Management toolkit for Life Sciences (RDMkit)](https://rdmkit
 
 ### Browse Standard Implementations by Lifecycle Stage
 
-1. [Planning](glossary/Planning.md) use-case planning considerations for standard ontology selection while drafting a data management plan [here](https://rdmkit.elixir-europe.org/metadata_management#how-do-you-find-appropriate-vocabularies-or-ontologies)
-2. [Collecting](glossary/Collecting.md) use-case collection considerations for metagenomics [here](https://rdmkit.elixir-europe.org/marine_metagenomics#managing-marine-metagenomic-metadata)
-3. [Processing](glossary/Processing.md) use-case processing considerations for proteomics [here](https://rdmkit.elixir-europe.org/proteomics#processing-and-analysis-of-proteomics-data)
-4. [Analyzing](glossary/Analyzing.md) use-case analysis considerations for single-cell sequencing [here](https://rdmkit.elixir-europe.org/single_cell_sequencing#data-analysis-steps-and-related-format-for-single-cell-sequencing)
-5. [Preserving](glossary/Preserving.md) use-case preservation considerations for publishing expression data [here](https://rdmkit.elixir-europe.org/single_cell_sequencing#long-term-data-storage-and-accessibility)
-6. [Sharing](glossary/Sharing.md) use-case sharing considerations for genomics [here](https://rdmkit.elixir-europe.org/human_pathogen_genomics#sharing-and-preserving-pathogen-genomic-data)
-7. [Reusing](glossary/Reusing.md) use-case reuse considerations for persistent identifier selection [here](https://rdmkit.elixir-europe.org/identifiers#which-type-of-identifiers-should-you-use-for-data-publication)
+1. [Planning](glossary/Planning) use-case planning considerations for standard ontology selection while drafting a data management plan [here](https://rdmkit.elixir-europe.org/metadata_management#how-do-you-find-appropriate-vocabularies-or-ontologies)
+2. [Collecting](glossary/Collecting) use-case collection considerations for metagenomics [here](https://rdmkit.elixir-europe.org/marine_metagenomics#managing-marine-metagenomic-metadata)
+3. [Processing](glossary/Processing) use-case processing considerations for proteomics [here](https://rdmkit.elixir-europe.org/proteomics#processing-and-analysis-of-proteomics-data)
+4. [Analyzing](glossary/Analyzing) use-case analysis considerations for single-cell sequencing [here](https://rdmkit.elixir-europe.org/single_cell_sequencing#data-analysis-steps-and-related-format-for-single-cell-sequencing)
+5. [Preserving](glossary/Preserving) use-case preservation considerations for publishing expression data [here](https://rdmkit.elixir-europe.org/single_cell_sequencing#long-term-data-storage-and-accessibility)
+6. [Sharing](glossary/Sharing) use-case sharing considerations for genomics [here](https://rdmkit.elixir-europe.org/human_pathogen_genomics#sharing-and-preserving-pathogen-genomic-data)
+7. [Reusing](glossary/Reusing) use-case reuse considerations for persistent identifier selection [here](https://rdmkit.elixir-europe.org/identifiers#which-type-of-identifiers-should-you-use-for-data-publication)
 
 ---
 
@@ -77,19 +77,19 @@ Advanced user journeys enable more in-depth browsing across multiple Omics domai
 
 1. **Browse Domain vs. Universal Standard Types**
 
-  [Terminology Artefacts](glossary/Terminology-Artefacts.md)
+  [Terminology Artefacts](glossary/Terminology-Artefacts)
    - Universal (generalist) examples relevant to Omics may include [BFO](https://doi.org/10.25504/FAIRsharing.wcpd6f), [T4FS](https://doi.org/10.25504/FAIRsharing.fb99fa), [EDAM](https://doi.org/10.25504/FAIRsharing.a6r7zs), etc. Domain examples may include [EFO](https://doi.org/10.25504/FAIRsharing.1gr4tz), [PSI-MS CV](https://doi.org/10.25504/FAIRsharing.sxh2dp), [XLMOD](https://doi.org/10.25504/FAIRsharing.6ccbe6).
   
-  [Reporting Guidelines](glossary/Reporting-Guidelines.md)
+  [Reporting Guidelines](glossary/Reporting-Guidelines)
    - Universal (generalist) examples may include [FORCE11 Data Citation Principles](https://doi.org/10.25504/FAIRsharing.9hynwc) or the [FAIR Principles](https://doi.org/10.25504/FAIRsharing.WWI10U). Domain examples may include [MIxS](https://doi.org/10.25504/FAIRsharing.9aa0zp), [MIAPE](https://doi.org/10.25504/FAIRsharing.5g1fma), [LSI Checklist](https://doi.org/10.25504/FAIRsharing.ffb40f).
   
-  [Models or Formats](glossary/Models-or-Formats.md)
+  [Models or Formats](glossary/Models-or-Formats)
    - Universal (generalist) examples may include [ISO 8601](https://doi.org/10.25504/FAIRsharing.987d5a), [OWL](https://doi.org/10.25504/FAIRsharing.atygwy), [ISA-TAB](https://doi.org/10.25504/FAIRsharing.53gp75). Domain examples may include [FASTA](https://doi.org/10.25504/FAIRsharing.rz4vfg), [mzML](https://doi.org/10.25504/FAIRsharing.26dmba), [HDF5](https://doi.org/10.25504/FAIRsharing.wvgta9).
   
-  [Identifier Schemas](glossary/Identifier-Schemas.md)
+  [Identifier Schemas](glossary/Identifier-Schemas)
    - Universal (generalist) examples may include [DOI](https://doi.org/10.25504/FAIRsharing.hFLKCn), [CURIE](https://doi.org/10.25504/FAIRsharing.af21db), [ORCID](https://doi.org/10.25504/FAIRsharing.OrNi1L). Domain examples may include [Biosample ID](https://doi.org/10.25504/FAIRsharing.322dc0), [UniProt ID](https://doi.org/10.25504/FAIRsharing.fd6003), [InChI](https://doi.org/10.25504/FAIRsharing.ddk9t9).
 
 
- > [!note] **Additional content pending**
+ > <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/></svg> **Additional content pending**
 
 ---

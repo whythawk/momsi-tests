@@ -10,10 +10,12 @@ export default {
     {
       name: "Explore",
       pages: [
+        {name: "User Journeys", path: "/user-journeys"},
         {name: "Cluster", path: "/example-cluster"},
         {name: "Sunburst", path: "/example-sunburst"},
         {name: "Circle packing", path: "/example-circle"},
         {name: "Icicle", path: "/example-icicle"},
+        {name: "Glossary", path: "/glossary"},
         {name: "Contributing", path: "/contributing"}
       ]
     }
