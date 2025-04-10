@@ -75,26 +75,6 @@ function getFormalIdentifier(num, term = standard, length = LEADINGZEROS) {
 	return `${INDICATORS[term]}:${num}`
 }
 
-function checkIdentifier(title = title, submission = submission, data = data, term = standard, contributor = null) {
-  // If the title refers to an existing Standard, then update that entirely
-  // Else generate a new identifier and push that to the database
-  submission["Contributor"] = contributor
-  if (submission.hasOwnProperty("comments")) delete submission.comments
-  console.log("TITLE:", title)
-  if (title.startsWith(`[${INDICATORS[term]}:`)) {
-	  submission["Identifier"] = title.slice(1,14)
-	  // https://stackoverflow.com/a/39529049
-	  const indexOfTerm = data[term].findIndex(item => item.Identifier === submission.Identifier)
-	  if (indexOfTerm !== -1) {
-		  data[term][indexOfTerm] = submission
-		  return data
-	  }
-  }
-  // Default, create an identifier and append
-  submission["Identifier"] = getFormalIdentifier(data[term].length)
-  return submission
-}
-
 function giveCRediT(submission = submission, issueNumber=issueNumber, contributor=null) {
 	// |  Issue   |    Date    |       Name       |      ORCID ID       |                  CRediT                   |  Standard ID  |   Github ID   |
 	// | :------: | :--------: | :--------------: | :-----------------: | :---------------------------------------: | :-----------: | :-----------: |
@@ -105,15 +85,33 @@ function giveCRediT(submission = submission, issueNumber=issueNumber, contributo
 	const yyyy = today.getFullYear();
 	const renew = yyyy + '-' + mm + '-' + dd;
 	const CRediT = `| #${issueNumber} | ${renew}  | ${submission["Contributor Name"]} | \`${submission["Contributor ORCID ID"]}\` | ${submission["CRediT"]} | ${submission["Identifier"]} | [@${contributor}](https://github.com/${contributor}) |\n`;
-	return CRediT
+	fs.appendFileSync('CONTRIBUTING.md', CRediT);
+}
+
+function submitData(title = title, submission = submission, data = data, term = standard, contributor = contributor, issueNumber = issueNumber) {
+	// If the title refers to an existing Standard, then update that entirely
+	// Else generate a new identifier and push that to the database
+	submission["Contributor"] = contributor
+	if (submission.hasOwnProperty("comments")) delete submission.comments
+	console.log("TITLE:", title)
+	if (title.startsWith(`[${INDICATORS[term]}:`)) {
+		submission["Identifier"] = title.slice(1,14)
+		giveCRediT(submission, issueNumber, contributor)
+		// https://stackoverflow.com/a/39529049
+		const indexOfTerm = data[term].findIndex(item => item.Identifier === submission.Identifier)
+		if (indexOfTerm !== -1) {
+			data[term][indexOfTerm] = submission
+			return data
+		}
+	}
+	// Default, create an identifier and append
+	submission["Identifier"] = getFormalIdentifier(data[term].length)
+	giveCRediT(submission, issueNumber, contributor)
+	data[term].push(submission)
+	// Update database
+	fs.writeFileSync('./src/data/database.json', JSON.stringify(data, null, '  '));
 }
 
 // Formalise submission
 submission = replaceKeyInObjectArray(submission, REPLACEMAP)
-submission = checkIdentifier(title, submission, data, standard, contributor)
-// Give CRediT
-const CRediT = giveCRediT(submission, issueNumber, contributor)
-fs.appendFileSync('CONTRIBUTING.md', CRediT);
-// Update database
-data[standard].push(submission)
-fs.writeFileSync('./src/data/database.json', JSON.stringify(data, null, '  '));
+submitData(title, submission, data, standard, contributor, issueNumber)
